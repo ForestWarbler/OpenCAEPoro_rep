@@ -1,0 +1,7 @@
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build/CMakeFiles/petsc_solver.dir
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build/CMakeFiles/edit_cache.dir
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build/CMakeFiles/rebuild_cache.dir
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build/CMakeFiles/list_install_components.dir
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build/CMakeFiles/install.dir
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build/CMakeFiles/install/local.dir
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build/CMakeFiles/install/strip.dir

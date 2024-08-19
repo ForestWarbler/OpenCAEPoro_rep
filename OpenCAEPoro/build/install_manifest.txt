@@ -1,0 +1,2 @@
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/lib/libOpenCAEPoroX.a
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro
