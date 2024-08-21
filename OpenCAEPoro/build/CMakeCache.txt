@@ -18,7 +18,7 @@
 BLAS_guide_LIBRARY:FILEPATH=BLAS_guide_LIBRARY-NOTFOUND
 
 //Path to a library.
-BLAS_iomp5_LIBRARY:FILEPATH=/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib/libiomp5.so
+BLAS_iomp5_LIBRARY:FILEPATH=/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin/libiomp5.so
 
 //Path to a library.
 BLAS_mkl_core_LIBRARY:FILEPATH=/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_core.so
@@ -309,7 +309,7 @@ USE_UMFPACK:BOOL=OFF
 USE_VTK:BOOL=OFF
 
 //Path to a program.
-XIAR:FILEPATH=/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/bin/xiar
+XIAR:FILEPATH=/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/xiar
 
 
 ########################
@@ -474,9 +474,9 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding BLAS
-FIND_PACKAGE_MESSAGE_DETAILS_BLAS:INTERNAL=[/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_thread.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_core.so;/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib/libiomp5.so;-lm;-ldl][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_BLAS:INTERNAL=[/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_thread.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_core.so;/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin/libiomp5.so;-lm;-ldl][v()]
 //Details about finding LAPACK
-FIND_PACKAGE_MESSAGE_DETAILS_LAPACK:INTERNAL=[/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_thread.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_core.so;/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib/libiomp5.so;-lm;-ldl;-lm;-ldl][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_LAPACK:INTERNAL=[/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_thread.so;/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_core.so;/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin/libiomp5.so;-lm;-ldl;-lm;-ldl][v()]
 //Details about finding METIS
 FIND_PACKAGE_MESSAGE_DETAILS_METIS:INTERNAL=[;/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/libmetis/libmetis.a][/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/metis/include][v()]
 //Details about finding PARMETIS

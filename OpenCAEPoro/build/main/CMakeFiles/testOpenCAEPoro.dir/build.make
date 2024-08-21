@@ -96,7 +96,7 @@ main/testOpenCAEPoro: libOpenCAEPoroX.a
 main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so
 main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_thread.so
 main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_core.so
-main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib/libiomp5.so
+main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin/libiomp5.so
 main/testOpenCAEPoro: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/libparmetis/libparmetis.a
 main/testOpenCAEPoro: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/libmetis/libmetis.a
 main/testOpenCAEPoro: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/lib/libpetsc_solver.a

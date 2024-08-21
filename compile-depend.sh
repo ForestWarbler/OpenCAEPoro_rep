@@ -49,8 +49,8 @@ cd $DEROOT/petsc-3.19.3
 #PETROOT="$DEROOT/petsc"
 export PETSC_DIR=$DEROOT/petsc-3.19.3
 export PETSC_ARCH=petsc_install
-export COPTFLAGS="-O3"
-export CXXOPTFLAGS="-O3"
+export COPTFLAGS="-O3 -xHost -fp-model precise -qopenmp -diag-disable=10441"
+export CXXOPTFLAGS="-O3 -fp-model precise -recursive -assume protect_parens -xHost -qopenmp"
 
 ./configure CC=mpiicc CXX=mpiicpc FC=mpiifort --with-fortran-bindings=0 --with-hypre-dir=$DEROOT/hypre-2.28.0/install --with-debugging=0 CFLAGS=$CFLAGS
 make PETSC_DIR=$DEROOT/petsc-3.19.3 PETSC_ARCH=petsc_install all -j

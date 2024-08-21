@@ -202,7 +202,7 @@ PETSC_INCLUDE_DIRS:PATH=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-insta
 PETSC_LIBRARIES:FILEPATH=PETSC_LIBRARIES-NOTFOUND
 
 //Path to a program.
-XIAR:FILEPATH=/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/bin/xiar
+XIAR:FILEPATH=/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/xiar
 
 //Value Computed by CMake
 petsc_solver_BINARY_DIR:STATIC=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/build

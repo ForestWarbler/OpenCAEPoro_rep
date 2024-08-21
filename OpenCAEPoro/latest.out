@@ -108,20 +108,33 @@ Pressure Distribution
 8422.959	4806.087	4599.567	4791.739	
 8425.000	4806.594	4599.780	4792.626	
 
-Initialization done. Wall time : 0.019 Sec
+Initialization done. Wall time : 0.020 Sec
 ###INFO: Initialize Resevoir -- end!
 
 Dynamic simulation with FIM
 
 Timestep 0     :      0.000 Day     Wall time: 0.000 Sec
-Timestep 7     :      1.000 Day     Wall time: 9.708 Sec
-Timestep 12    :      4.000 Day     Wall time: 14.538 Sec
-Timestep 18    :     13.000 Day     Wall time: 19.441 Sec
-Timestep 29    :     42.000 Day     Wall time: 29.832 Sec
-Timestep 33    :     50.000 Day     Wall time: 32.597 Sec
-Timestep 77    :    180.000 Day     Wall time: 79.300 Sec
-Timestep 121   :    310.000 Day     Wall time: 137.267 Sec
-Timestep 146   :    360.000 Day     Wall time: 168.965 Sec
+Timestep 7     :      1.000 Day     Wall time: 10.441 Sec
+Timestep 12    :      4.000 Day     Wall time: 15.237 Sec
+Timestep 18    :     13.000 Day     Wall time: 20.108 Sec
+Timestep 29    :     42.000 Day     Wall time: 30.432 Sec
+Timestep 33    :     50.000 Day     Wall time: 33.172 Sec
+Timestep 77    :    180.000 Day     Wall time: 79.537 Sec
+Timestep 121   :    310.000 Day     Wall time: 137.078 Sec
+Timestep 146   :    360.000 Day     Wall time: 168.511 Sec
 ### WARNING: NR not fully converged!
 ### WARNING: Cut time step size: 4.000 Day  -> 1.200 Day !
 ### WARNING: Cut time step size: 4.800 Day  -> 1.440 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+Timestep 224   :    720.000 Day     Wall time: 276.341 Sec
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 3.000 Day  -> 0.900 Day !
+Timestep 264   :   1080.000 Day     Wall time: 323.878 Sec
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 40.000 Day  -> 12.000 Day !
+Timestep 278   :   1440.000 Day     Wall time: 354.446 Sec
+Timestep 288   :   1800.000 Day     Wall time: 378.213 Sec
+Timestep 297   :   2160.000 Day     Wall time: 394.953 Sec
