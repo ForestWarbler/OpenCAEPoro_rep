@@ -8,8 +8,8 @@ prefix     = not-set
 gklib_path = not-set
 metis_path = not-set
 shared     = not-set
-cc         = mpiicc
-cxx        = mpiicpc
+cc         = mpicc
+cxx        = mpicxx
 
 
 # Basically proxies everything to the builddir cmake.

@@ -124,8 +124,8 @@ libparmetis/CMakeFiles/parmetis.dir/weird.c.o: \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/metis/GKlib/gk_mkutils.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/metis/GKlib/gk_proto.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/include/parmetis.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/metis/include/metis.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/libparmetis/./../metis/libmetis/gklib_defs.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/libparmetis/./../metis/libmetis/gklib_rename.h \

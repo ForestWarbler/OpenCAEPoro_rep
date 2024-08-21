@@ -76,29 +76,29 @@ programs/CMakeFiles/pometis.dir/pometis.c.o: programs/CMakeFiles/pometis.dir/fla
 programs/CMakeFiles/pometis.dir/pometis.c.o: ../../programs/pometis.c
 programs/CMakeFiles/pometis.dir/pometis.c.o: programs/CMakeFiles/pometis.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object programs/CMakeFiles/pometis.dir/pometis.c.o"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/pometis.dir/pometis.c.o -MF CMakeFiles/pometis.dir/pometis.c.o.d -o CMakeFiles/pometis.dir/pometis.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/pometis.c
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/pometis.dir/pometis.c.o -MF CMakeFiles/pometis.dir/pometis.c.o.d -o CMakeFiles/pometis.dir/pometis.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/pometis.c
 
 programs/CMakeFiles/pometis.dir/pometis.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pometis.dir/pometis.c.i"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/pometis.c > CMakeFiles/pometis.dir/pometis.c.i
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/pometis.c > CMakeFiles/pometis.dir/pometis.c.i
 
 programs/CMakeFiles/pometis.dir/pometis.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pometis.dir/pometis.c.s"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/pometis.c -o CMakeFiles/pometis.dir/pometis.c.s
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/pometis.c -o CMakeFiles/pometis.dir/pometis.c.s
 
 programs/CMakeFiles/pometis.dir/io.c.o: programs/CMakeFiles/pometis.dir/flags.make
 programs/CMakeFiles/pometis.dir/io.c.o: ../../programs/io.c
 programs/CMakeFiles/pometis.dir/io.c.o: programs/CMakeFiles/pometis.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object programs/CMakeFiles/pometis.dir/io.c.o"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/pometis.dir/io.c.o -MF CMakeFiles/pometis.dir/io.c.o.d -o CMakeFiles/pometis.dir/io.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/pometis.dir/io.c.o -MF CMakeFiles/pometis.dir/io.c.o.d -o CMakeFiles/pometis.dir/io.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c
 
 programs/CMakeFiles/pometis.dir/io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pometis.dir/io.c.i"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c > CMakeFiles/pometis.dir/io.c.i
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c > CMakeFiles/pometis.dir/io.c.i
 
 programs/CMakeFiles/pometis.dir/io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pometis.dir/io.c.s"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c -o CMakeFiles/pometis.dir/io.c.s
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c -o CMakeFiles/pometis.dir/io.c.s
 
 # Object files for target pometis
 pometis_OBJECTS = \

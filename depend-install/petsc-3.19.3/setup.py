@@ -56,6 +56,13 @@ def get_config():
     return conf
 """
 
+# 读取外部环境变量 ROOT_DIR
+if(DEFINED ENV{ROOT_DIR})
+    set(ROOT_DIR $ENV{ROOT_DIR})
+else()
+    message(FATAL_ERROR "ROOT_DIR environment variable is not set")
+endif()
+
 metadata = {
     'provides' : ['petsc'],
     'zip_safe' : False,

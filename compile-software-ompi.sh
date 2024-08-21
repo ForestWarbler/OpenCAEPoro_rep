@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # export_env
-export CC=mpiicc
-export CXX=mpiicpc
+export CC=mpicc
+export CXX=mpicxx
 DEROOT="$OPENCAE_PROJECT_ROOT/depend-install"
 
 #petsc_solver

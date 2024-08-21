@@ -73,15 +73,15 @@ main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o: main/CMakeFiles/testOpenCAEPoro.
 main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o: ../main/Main.cpp
 main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o: main/CMakeFiles/testOpenCAEPoro.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/main && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicpc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o -MF CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o.d -o CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/main/Main.cpp
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/main && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o -MF CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o.d -o CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/main/Main.cpp
 
 main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testOpenCAEPoro.dir/Main.cpp.i"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/main && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicpc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/main/Main.cpp > CMakeFiles/testOpenCAEPoro.dir/Main.cpp.i
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/main && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/main/Main.cpp > CMakeFiles/testOpenCAEPoro.dir/Main.cpp.i
 
 main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testOpenCAEPoro.dir/Main.cpp.s"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/main && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicpc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/main/Main.cpp -o CMakeFiles/testOpenCAEPoro.dir/Main.cpp.s
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/main && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/main/Main.cpp -o CMakeFiles/testOpenCAEPoro.dir/Main.cpp.s
 
 # Object files for target testOpenCAEPoro
 testOpenCAEPoro_OBJECTS = \
@@ -96,7 +96,7 @@ main/testOpenCAEPoro: libOpenCAEPoroX.a
 main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so
 main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_thread.so
 main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_core.so
-main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib/libiomp5.so
+main/testOpenCAEPoro: /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin/libiomp5.so
 main/testOpenCAEPoro: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/libparmetis/libparmetis.a
 main/testOpenCAEPoro: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/libmetis/libmetis.a
 main/testOpenCAEPoro: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/lib/libpetsc_solver.a

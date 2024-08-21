@@ -1,4 +1,28 @@
-C/C++ example src/snes/tutorials/ex19 run successfully with 1 MPI process
-C/C++ example src/snes/tutorials/ex19 run successfully with 2 MPI processes
-C/C++ example src/snes/tutorials/ex19 run successfully with hypre
+Possible error running C/C++ src/snes/tutorials/ex19 with 1 MPI process
+See https://petsc.org/release/faq/
+hwloc/linux: Ignoring PCI device with non-16bit domain.
+Pass --enable-32bits-pci-domain to configure to support such devices
+(warning: it would break the library ABI, don't enable unless really needed).
+lid velocity = 0.0016, prandtl # = 1., grashof # = 1.
+Number of SNES iterations = 2
+Possible error running C/C++ src/snes/tutorials/ex19 with 2 MPI processes
+See https://petsc.org/release/faq/
+hwloc/linux: Ignoring PCI device with non-16bit domain.
+Pass --enable-32bits-pci-domain to configure to support such devices
+(warning: it would break the library ABI, don't enable unless really needed).
+lid velocity = 0.0016, prandtl # = 1., grashof # = 1.
+Number of SNES iterations = 2
+0a1,3
+> hwloc/linux: Ignoring PCI device with non-16bit domain.
+> Pass --enable-32bits-pci-domain to configure to support such devices
+> (warning: it would break the library ABI, don't enable unless really needed).
+3,4c6,7
+<   1 SNES Function norm 4.12227e-06 
+<   2 SNES Function norm 6.098e-11 
+---
+>   1 SNES Function norm 3.32882e-06 
+>   2 SNES Function norm < 1.e-11
+/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/src/snes/tutorials
+Possible problem with ex19 running with hypre, diffs above
+=========================================
 Completed test examples

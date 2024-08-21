@@ -144,8 +144,8 @@ programs/CMakeFiles/parmetis_prog.dir/adaptgraph.c.o: ../../programs/adaptgraph.
   ../../metis/GKlib/gk_mkutils.h \
   ../../metis/GKlib/gk_proto.h \
   ../../include/parmetis.h \
-  /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
-  /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
+  /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+  /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
   ../../metis/include/metis.h \
   ../../metis/libmetis/gklib_defs.h \
   ../../metis/libmetis/gklib_rename.h \
@@ -299,8 +299,8 @@ programs/CMakeFiles/parmetis_prog.dir/io.c.o: ../../programs/io.c \
   ../../metis/GKlib/gk_mkutils.h \
   ../../metis/GKlib/gk_proto.h \
   ../../include/parmetis.h \
-  /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
-  /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
+  /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+  /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
   ../../metis/include/metis.h \
   ../../metis/libmetis/gklib_defs.h \
   ../../metis/libmetis/gklib_rename.h \
@@ -454,8 +454,8 @@ programs/CMakeFiles/parmetis_prog.dir/parmetis.c.o: ../../programs/parmetis.c \
   ../../metis/GKlib/gk_mkutils.h \
   ../../metis/GKlib/gk_proto.h \
   ../../include/parmetis.h \
-  /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
-  /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
+  /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+  /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
   ../../metis/include/metis.h \
   ../../metis/libmetis/gklib_defs.h \
   ../../metis/libmetis/gklib_rename.h \
@@ -559,6 +559,8 @@ programs/CMakeFiles/parmetis_prog.dir/parmetis.c.o: ../../programs/parmetis.c \
 
 ../../programs/adaptgraph.c:
 
+/APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h:
+
 ../../metis/GKlib/gk_macros.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
@@ -566,6 +568,8 @@ programs/CMakeFiles/parmetis_prog.dir/parmetis.c.o: ../../programs/parmetis.c \
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -731,8 +735,6 @@ programs/CMakeFiles/parmetis_prog.dir/parmetis.c.o: ../../programs/parmetis.c \
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
@@ -744,8 +746,6 @@ programs/CMakeFiles/parmetis_prog.dir/parmetis.c.o: ../../programs/parmetis.c \
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 

@@ -164,8 +164,8 @@ CMakeFiles/petsc_solver.dir/src/PETScBSolverPS.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petsccxxcomplexfix.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmath.h \
  /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/math.h \
  /usr/include/c++/11/math.h \

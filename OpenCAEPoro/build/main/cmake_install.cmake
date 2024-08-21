@@ -47,7 +47,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro"
-         RPATH "/usr/local/lib:/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib")
+         RPATH "/usr/local/lib:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro")
@@ -62,8 +62,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro"
-         OLD_RPATH "/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib:::::::::::::::"
-         NEW_RPATH "/usr/local/lib:/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/lib:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib")
+         OLD_RPATH "/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib:::::::::::::::"
+         NEW_RPATH "/usr/local/lib:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro")
     endif()

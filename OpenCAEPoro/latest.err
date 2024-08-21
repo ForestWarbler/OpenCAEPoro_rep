@@ -1,12 +1,19 @@
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and MPI will try to terminate your MPI job as well)
+[cnode3077:3901551] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
 ### WARNING: NTG will be set to 1 !
     --> function: void PreParamGridWell::PostProcessInput()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::167
 ### WARNING: ACTNUM will be set to 1 !
     --> function: void PreParamGridWell::PostProcessInput()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::177
-### WARNING: Negative Ni: Ni[0] in Bulk[927] = -3.404488e+02, lNi = 1.096197e+03, Nt = 2.753011e+03
-    --> function: ReservoirState Bulk::CheckNi()
-    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
-### WARNING: Negative Ni: Ni[0] in Bulk[609] = -1.094891e+03, lNi = 1.096198e+03, Nt = 2.753017e+03
-    --> function: ReservoirState Bulk::CheckNi()
-    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+slurmstepd: error:  mpi/pmix_v4: _errhandler: cnode3077 [0]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.2021661.0:0]
+srun: error: cnode3077: task 0: Killed
+srun: Force Terminated StepId=2021661.0
+[mpiexec@cnode3077] check_downstream_work_complition (../../../../../src/pm/i_hydra/mpiexec/mpiexec.c:1303): downstream from host cnode3077 exited abnormally
+[mpiexec@cnode3077] check_downstream_work_complition (../../../../../src/pm/i_hydra/mpiexec/mpiexec.c:1307): trying to close other downstreams
+[mpiexec@cnode3077] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:554): downstream from host cnode3077 exited with status 137
+[mpiexec@cnode3077] main (../../../../../src/pm/i_hydra/mpiexec/mpiexec.c:2275): assert (pg->intel.exitcodes != NULL) failed
+[mpiexec@cnode3077] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:362): write error (Bad file descriptor)

@@ -13,8 +13,8 @@ petsc_install/obj/ksp/ksp/impls/fcg/pipefcg/pipefcg.o: \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmacros.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscversion.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscsystypes.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmath.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscerror.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscviewertypes.h \
@@ -147,9 +147,9 @@ petsc_install/obj/ksp/ksp/impls/fcg/pipefcg/pipefcg.o: \
 
 /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/math_common_undefine.h:
 
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h:
+/APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h:
 
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h:
+/APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h:
 
 /usr/include/stdio.h:
 

@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #Flags
-export CC=mpiicc
-export CXX=mpiicpc
-export FC=mpiifort
+export CC=mpicc
+export CXX=mpicxx
+export FC=mpifort
 export CFLAGS="-O3 -xHost -fp-model precise -qopenmp -diag-disable=10441"
 export CMAKE_C_FLAGS="-O3 -xHost -fp-model precise"
 export FFLAGS="-O3 -fp-model precise -recursive -assume protect_parens -xHost -qopenmp"
-export cc=mpiicc
-export cxx=mpiicpc
+export cc=mpicc
+export cxx=mpicxx
 
 #Directory
 # OPENCAE_PROJECT_ROOT="/data/u23336338/homework/lab_1_1/opencaeporo_2"
@@ -29,9 +29,9 @@ make cblaslib -j 64
 make lapacklib -j 64
 make lapackelib -j 64
 
-#parmetis
+#parmetiss
 cd $DEROOT/parmetis-4.0.3
-make config cc=mpiicc prefix=$DEROOT/parmetis-4.0.3/parmetis-install
+make config cc=mpicc prefix=$DEROOT/parmetis-4.0.3/parmetis-install
 make -j 64
 make install
 
@@ -52,7 +52,7 @@ export PETSC_ARCH=petsc_install
 export COPTFLAGS="-O3"
 export CXXOPTFLAGS="-O3"
 
-./configure CC=mpiicc CXX=mpiicpc FC=mpiifort --with-fortran-bindings=0 --with-hypre-dir=$DEROOT/hypre-2.28.0/install --with-debugging=0 CFLAGS=$CFLAGS
+./configure CC=mpicc CXX=mpicxx FC=mpifort --with-fortran-bindings=0 --with-hypre-dir=$DEROOT/hypre-2.28.0/install --with-debugging=0 CFLAGS=$CFLAGS
 make PETSC_DIR=$DEROOT/petsc-3.19.3 PETSC_ARCH=petsc_install all -j
 make all check
 

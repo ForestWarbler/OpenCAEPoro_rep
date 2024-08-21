@@ -12,10 +12,10 @@ if __name__ == '__main__':
     '-fp-model',
     '-qopenmp',
     '-xHost',
-    'CC=mpiicc',
+    'CC=mpicc',
     'CFLAGS=-O3',
-    'CXX=mpiicpc',
-    'FC=mpiifort',
+    'CXX=mpicxx',
+    'FC=mpifort',
     'PETSC_ARCH=petsc_install',
     'precise',
   ]

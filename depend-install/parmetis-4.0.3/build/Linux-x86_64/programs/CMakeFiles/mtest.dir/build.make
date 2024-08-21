@@ -76,29 +76,29 @@ programs/CMakeFiles/mtest.dir/mtest.c.o: programs/CMakeFiles/mtest.dir/flags.mak
 programs/CMakeFiles/mtest.dir/mtest.c.o: ../../programs/mtest.c
 programs/CMakeFiles/mtest.dir/mtest.c.o: programs/CMakeFiles/mtest.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object programs/CMakeFiles/mtest.dir/mtest.c.o"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/mtest.dir/mtest.c.o -MF CMakeFiles/mtest.dir/mtest.c.o.d -o CMakeFiles/mtest.dir/mtest.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/mtest.c
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/mtest.dir/mtest.c.o -MF CMakeFiles/mtest.dir/mtest.c.o.d -o CMakeFiles/mtest.dir/mtest.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/mtest.c
 
 programs/CMakeFiles/mtest.dir/mtest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mtest.dir/mtest.c.i"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/mtest.c > CMakeFiles/mtest.dir/mtest.c.i
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/mtest.c > CMakeFiles/mtest.dir/mtest.c.i
 
 programs/CMakeFiles/mtest.dir/mtest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mtest.dir/mtest.c.s"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/mtest.c -o CMakeFiles/mtest.dir/mtest.c.s
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/mtest.c -o CMakeFiles/mtest.dir/mtest.c.s
 
 programs/CMakeFiles/mtest.dir/io.c.o: programs/CMakeFiles/mtest.dir/flags.make
 programs/CMakeFiles/mtest.dir/io.c.o: ../../programs/io.c
 programs/CMakeFiles/mtest.dir/io.c.o: programs/CMakeFiles/mtest.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object programs/CMakeFiles/mtest.dir/io.c.o"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/mtest.dir/io.c.o -MF CMakeFiles/mtest.dir/io.c.o.d -o CMakeFiles/mtest.dir/io.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/CMakeFiles/mtest.dir/io.c.o -MF CMakeFiles/mtest.dir/io.c.o.d -o CMakeFiles/mtest.dir/io.c.o -c /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c
 
 programs/CMakeFiles/mtest.dir/io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mtest.dir/io.c.i"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c > CMakeFiles/mtest.dir/io.c.i
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c > CMakeFiles/mtest.dir/io.c.i
 
 programs/CMakeFiles/mtest.dir/io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mtest.dir/io.c.s"
-	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c -o CMakeFiles/mtest.dir/io.c.s
+	cd /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/build/Linux-x86_64/programs && /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/programs/io.c -o CMakeFiles/mtest.dir/io.c.s
 
 # Object files for target mtest
 mtest_OBJECTS = \

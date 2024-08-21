@@ -130,9 +130,8 @@ main/CMakeFiles/testOpenCAEPoro.dir/Main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpicxx.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/OCP.hpp \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/OCPControl.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \

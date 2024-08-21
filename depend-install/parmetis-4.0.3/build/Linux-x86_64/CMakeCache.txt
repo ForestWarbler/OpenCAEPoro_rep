@@ -34,7 +34,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicpc
+CMAKE_CXX_COMPILER:STRING=/APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicxx
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -52,7 +52,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc
+CMAKE_C_COMPILER:STRING=/APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/bin/mpicc
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=-O3 -xHost -fp-model precise -qopenmp -diag-disable=10441
@@ -236,7 +236,7 @@ ParMETIS_IS_TOP_LEVEL:STATIC=ON
 ParMETIS_SOURCE_DIR:STATIC=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3
 
 //Path to a program.
-XIAR:FILEPATH=/APP/u22/x86/intel/oneapi2024.2/compiler/2024.2/bin/xiar
+XIAR:FILEPATH=/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/xiar
 
 //Dependencies for the target
 metis_LIB_DEPENDS:STATIC=general;m;

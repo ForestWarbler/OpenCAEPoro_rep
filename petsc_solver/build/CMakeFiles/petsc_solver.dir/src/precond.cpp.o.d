@@ -57,14 +57,8 @@ CMakeFiles/petsc_solver.dir/src/precond.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /usr/include/c++/11/cstdint \
- /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/icc/stdint.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpicxx.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi.h \
+ /APP/u22/x86/mpi/openmpi-5.0.0-icc-oneapi2023.2-ch4/include/mpi_portable_platform.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/include/PETScSolver.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscksp.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscpc.h \
@@ -84,7 +78,11 @@ CMakeFiles/petsc_solver.dir/src/precond.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/inttypes.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/icc/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/inttypes.h \
  /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/complex \
  /usr/include/c++/11/complex /usr/include/c++/11/bits/cpp_type_traits.h \
  /usr/include/c++/11/ext/type_traits.h /usr/include/c++/11/cmath \
@@ -117,7 +115,7 @@ CMakeFiles/petsc_solver.dir/src/precond.cpp.o: \
  /usr/include/c++/11/bits/concept_check.h /usr/include/c++/11/debug/assertions.h \
  /usr/include/c++/11/bits/stl_iterator.h /usr/include/c++/11/bits/ptr_traits.h \
  /usr/include/c++/11/debug/debug.h /usr/include/c++/11/bits/predefined_ops.h \
- /usr/include/c++/11/bits/localefwd.h \
+ /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/cctype \
