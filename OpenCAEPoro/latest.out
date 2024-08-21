@@ -49,7 +49,7 @@ GRID
 
 Dynamic simulation for isothermal models
 
-Setup simulation done. Wall time : 0.006 Sec
+Setup simulation done. Wall time : 0.004 Sec
 ###INFO: Setup Simulator -- end!
 ###INFO: Initialize Resevoir -- begin!
 
@@ -108,33 +108,73 @@ Pressure Distribution
 8422.959	4806.087	4599.567	4791.739	
 8425.000	4806.594	4599.780	4792.626	
 
-Initialization done. Wall time : 0.020 Sec
+Initialization done. Wall time : 0.013 Sec
 ###INFO: Initialize Resevoir -- end!
 
 Dynamic simulation with FIM
 
 Timestep 0     :      0.000 Day     Wall time: 0.000 Sec
-Timestep 7     :      1.000 Day     Wall time: 10.441 Sec
-Timestep 12    :      4.000 Day     Wall time: 15.237 Sec
-Timestep 18    :     13.000 Day     Wall time: 20.108 Sec
-Timestep 29    :     42.000 Day     Wall time: 30.432 Sec
-Timestep 33    :     50.000 Day     Wall time: 33.172 Sec
-Timestep 77    :    180.000 Day     Wall time: 79.537 Sec
-Timestep 121   :    310.000 Day     Wall time: 137.078 Sec
-Timestep 146   :    360.000 Day     Wall time: 168.511 Sec
+Timestep 7     :      1.000 Day     Wall time: 58.146 Sec
+Timestep 12    :      4.000 Day     Wall time: 96.623 Sec
+Timestep 18    :     13.000 Day     Wall time: 134.786 Sec
+Timestep 29    :     42.000 Day     Wall time: 222.996 Sec
+Timestep 33    :     50.000 Day     Wall time: 248.377 Sec
+Timestep 77    :    180.000 Day     Wall time: 642.315 Sec
+Timestep 121   :    310.000 Day     Wall time: 1145.524 Sec
+Timestep 146   :    360.000 Day     Wall time: 1425.662 Sec
 ### WARNING: NR not fully converged!
 ### WARNING: Cut time step size: 4.000 Day  -> 1.200 Day !
 ### WARNING: Cut time step size: 4.800 Day  -> 1.440 Day !
-### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
 ### WARNING: NR not fully converged!
 ### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
-Timestep 224   :    720.000 Day     Wall time: 276.341 Sec
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+Timestep 229   :    720.000 Day     Wall time: 2371.113 Sec
 ### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
 ### WARNING: NR not fully converged!
 ### WARNING: Cut time step size: 3.000 Day  -> 0.900 Day !
-Timestep 264   :   1080.000 Day     Wall time: 323.878 Sec
+Timestep 269   :   1080.000 Day     Wall time: 2788.038 Sec
 ### WARNING: NR not fully converged!
 ### WARNING: Cut time step size: 40.000 Day  -> 12.000 Day !
-Timestep 278   :   1440.000 Day     Wall time: 354.446 Sec
-Timestep 288   :   1800.000 Day     Wall time: 378.213 Sec
-Timestep 297   :   2160.000 Day     Wall time: 394.953 Sec
+Timestep 283   :   1440.000 Day     Wall time: 3051.180 Sec
+Timestep 293   :   1800.000 Day     Wall time: 3258.651 Sec
+Timestep 302   :   2160.000 Day     Wall time: 3402.604 Sec
+Timestep 311   :   2520.000 Day     Wall time: 3549.788 Sec
+Timestep 320   :   2880.000 Day     Wall time: 3680.574 Sec
+Timestep 329   :   3240.000 Day     Wall time: 3824.387 Sec
+Timestep 338   :   3600.000 Day     Wall time: 3995.034 Sec
+==================================================
+Final time:                   3600.000( Day )
+ - Avg time step size .......   10.651 (338 steps)
+ - Avg Newton steps .........    3.902 (1319 succeeded + 77 wasted)
+ - Avg linear steps .........    6.439 (8493 succeeded + 701 wasted)
+Simulation time:                 3996.322 (Seconds)
+ - % Input & Partition .........    0.010 (0.387s)
+ - % Partition - ParMetis ......    0.007 (0.278s)
+ - % Input Reservoir ...........    0.001 (0.058s)
+ - % Setup Simulator ...........    0.000 (0.004s)
+ - % Initialization ............    0.000 (0.013s)
+ - % Assembling ................    0.371 (14.828s)
+ - % Assembling for LS interface    0.202 (8.057s)
+ - % Linear Solver .............   99.224 (3965.294s)
+ - % Newton Step ...............    0.037 (1.466s)
+ - % Updating Properties .......    0.090 (3.604s)
+ - % Output ....................    0.018 (0.728s)
+==================================================
+
+OBJECT TIME:    44.714 s 
+
+Item                          Average     Varance         Max         Min
+Grid Num                         4000         104        4127        3496
+Updating Properties(s)          3.578       0.158       4.065       3.242
+Assembling(s)                  17.155       1.420      19.307      14.439
+Communication(collect)(s)       3.636       1.539       7.132       1.096
+Communication(P2P)(s)           2.173       0.333       2.529       0.916
+1AllReduce(OCPCheck)(s)         0.305       0.140       0.725       0.113
+Newton Step(s)                  1.481       0.143       1.692       0.958
+Newton Step(c)(s)               0.680       0.032       0.746       0.585
+==================================================

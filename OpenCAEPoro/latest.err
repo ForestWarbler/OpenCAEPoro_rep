@@ -4,18 +4,45 @@
 ### WARNING: ACTNUM will be set to 1 !
     --> function: void PreParamGridWell::PostProcessInput()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::177
-### WARNING: Negative Ni: Ni[0] in Bulk[927] = -3.404488e+02, lNi = 1.096197e+03, Nt = 2.753011e+03
+### WARNING: Negative Ni: Ni[0] in Bulk[609] = -5.133040e+02, lNi = 1.096945e+03, Nt = 2.753700e+03
     --> function: ReservoirState Bulk::CheckNi()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
-### WARNING: Negative Ni: Ni[0] in Bulk[609] = -1.094891e+03, lNi = 1.096198e+03, Nt = 2.753017e+03
+### WARNING: Negative Ni: Ni[0] in Bulk[926] = -7.426479e+02, lNi = 1.096956e+03, Nt = 2.753889e+03
     --> function: ReservoirState Bulk::CheckNi()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
-### WARNING: Negative Ni: Ni[0] in Bulk[1214] = -1.637376e+02, lNi = 1.095987e+03, Nt = 2.752606e+03
+### WARNING: Negative Ni: Ni[0] in Bulk[1243] = -8.221533e+03, lNi = 1.098178e+03, Nt = 2.776540e+03
     --> function: ReservoirState Bulk::CheckNi()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
-### WARNING: Negative Ni: Ni[0] in Bulk[4186] = -2.572390e+02, lNi = 1.095988e+03, Nt = 2.752610e+03
+### WARNING: Negative Ni: Ni[0] in Bulk[4154] = -2.405727e+03, lNi = 1.098191e+03, Nt = 2.758332e+03
     --> function: ReservoirState Bulk::CheckNi()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
-### WARNING: Negative Ni: Ni[1] in Bulk[1658] = -1.304427e+04, lNi = 1.384562e+03, Nt = 2.734800e+03
+### WARNING: Negative Ni: Ni[0] in Bulk[1210] = -1.712348e+00, lNi = 1.099038e+03, Nt = 2.760560e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[845] = -2.227745e+02, lNi = 1.098019e+03, Nt = 2.769027e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[1556] = -1.223389e+03, lNi = 1.105232e+03, Nt = 4.069139e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[4289] = -1.292744e+04, lNi = 1.090678e+03, Nt = 2.744691e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[835] = -1.292744e+04, lNi = 1.090678e+03, Nt = 2.744691e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[1243] = -2.206707e+03, lNi = 1.095616e+03, Nt = 2.846629e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[846] = -5.492759e+03, lNi = 1.096386e+03, Nt = 2.760900e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[1243] = -1.751492e+04, lNi = 1.094931e+03, Nt = 2.750772e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[4154] = -9.353122e+02, lNi = 1.095320e+03, Nt = 2.750885e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[1658] = -1.080647e+04, lNi = 1.384565e+03, Nt = 2.734827e+03
     --> function: ReservoirState Bulk::CheckNi()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
