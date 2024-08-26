@@ -73,7 +73,7 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_C_COMPILER:FILEPATH=/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc
 
 //Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=-O3 -xHost -fp-model precise -qopenmp -diag-disable=10441
+CMAKE_C_FLAGS:STRING=
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g

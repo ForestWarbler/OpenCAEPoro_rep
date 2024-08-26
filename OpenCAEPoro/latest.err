@@ -4,10 +4,10 @@
 ### WARNING: ACTNUM will be set to 1 !
     --> function: void PreParamGridWell::PostProcessInput()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::177
-### WARNING: Negative Ni: Ni[0] in Bulk[927] = -3.404484e+02, lNi = 1.096197e+03, Nt = 2.753011e+03
+### WARNING: Negative Ni: Ni[0] in Bulk[609] = -1.094891e+03, lNi = 1.096198e+03, Nt = 2.753017e+03
     --> function: ReservoirState Bulk::CheckNi()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
-### WARNING: Negative Ni: Ni[0] in Bulk[609] = -1.094891e+03, lNi = 1.096198e+03, Nt = 2.753017e+03
+### WARNING: Negative Ni: Ni[0] in Bulk[927] = -3.404484e+02, lNi = 1.096197e+03, Nt = 2.753011e+03
     --> function: ReservoirState Bulk::CheckNi()
     --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
 ### WARNING: Negative Ni: Ni[0] in Bulk[1214] = -1.637372e+02, lNi = 1.095987e+03, Nt = 2.752606e+03

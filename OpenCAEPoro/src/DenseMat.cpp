@@ -278,6 +278,14 @@ void mydgemm_cpu_opt_k4(int M, int N, int K, double alpha, const double *A, int 
 void mydgemm_cpu_v4(int M, int N, int K, double alpha, const double *A, int LDA, const double *B, int LDB, double beta, double *C, int LDC)
 {
     int i,j,k;
+    // static int tickforexp=100000;
+    // const int maxt = 100000;
+    // if(tickforexp >= maxt){
+    //     std::cout << "M: " << M << ",N: " << N << ",K: " << K << std::endl;
+    //     tickforexp = 0;
+    // } else {
+    //     tickforexp++;
+    // }
     if (beta != 1.0) scale_c_k4(C,M,N,LDC,beta);
     int M4=M&-4,N4=N&-4;
     for (i=0;i<M4;i+=4){

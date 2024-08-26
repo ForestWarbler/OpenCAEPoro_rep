@@ -31,6 +31,9 @@ int main(int argc, char* argv[])
     CURRENT_RANK = myRank;
 
     OpenCAEPoroX simulator;
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(0);
+    std::cout.tie(0);
 
     // Step 0. Print simulator version information.   
     if (myRank == MASTER_PROCESS) {
