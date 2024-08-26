@@ -1,0 +1,351 @@
+vtune: Warning: Microarchitecture performance insights will not be available. Make sure the sampling driver is installed and enabled on your system.
+vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2 -command stop.
+=========================================
+OpenCAEPoroX Version-0.5.0
+=========================================
+###INFO: Input Grid File -- begin!
+
+-------------------------------------
+Check Grid param ... begin
+Check Grid param ... done
+-------------------------------------
+### WARNING: NTG will be set to 1 !
+    --> function: void PreParamGridWell::PostProcessInput()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::167
+### WARNING: ACTNUM will be set to 1 !
+    --> function: void PreParamGridWell::PostProcessInput()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::177
+###INFO: Input Grid File -- end!
+###INFO: Setup Grid and Well -- begin!
+###INFO: Setup Grid -- begin!
+  Number of inactive cells is 0 (0%)
+
+---------------------
+GRID
+---------------------
+  depthMax = 8400
+  depthMin = 8335
+  dxMax    = 1000
+  dxMin    = 1000
+  dyMax    = 1000
+  dyMin    = 1000
+  dzMax    = 50
+  dzMin    = 20
+###INFO: Setup Grid -- end!
+###INFO: Setup Connection between Grid and Well -- begin!
+###INFO: Setup Connection between Grid and Well -- end!
+###INFO: Setup Grid and Well -- end!
+###INFO: Input Reservoir Param -- begin!
+###INFO: Input Reservoir Param -- end!
+###INFO: Master Process Distribute Grid Params -- begin!
+###INFO: Master Process Distribute Grid Params -- end!
+###INFO: Input Reservoir Params -- begin!
+###INFO: Input Reservoir Params -- end!
+###INFO: Input Control Params -- begin!
+###INFO: Input Control Params -- end!
+###INFO: Input Output Params -- begin!
+###INFO: Input Output Params -- end!
+###INFO: Setup Simulator -- begin!
+
+Dynamic simulation for isothermal models
+
+Setup simulation done. Wall time : 0.001 Sec
+###INFO: Setup Simulator -- end!
+###INFO: Initialize Resevoir -- begin!
+
+---------------------
+Pressure Distribution
+---------------------
+   Depth            Poil            Pgas            Pwat         
+8325.000	4781.770	4589.348	4749.175	
+8327.041	4782.276	4589.561	4750.062	
+8329.082	4782.783	4589.773	4750.948	
+8331.122	4783.289	4589.986	4751.835	
+8333.163	4783.796	4590.199	4752.722	
+8335.204	4784.302	4590.411	4753.608	
+8337.245	4784.809	4590.624	4754.495	
+8339.286	4785.316	4590.837	4755.382	
+8341.327	4785.822	4591.049	4756.269	
+8343.367	4786.329	4591.262	4757.155	
+8345.408	4786.835	4591.475	4758.042	
+8347.449	4787.342	4591.688	4758.929	
+8349.490	4787.848	4591.900	4759.815	
+8351.531	4788.355	4592.113	4760.702	
+8353.571	4788.861	4592.326	4761.589	
+8355.612	4789.368	4592.539	4762.476	
+8357.653	4789.875	4592.752	4763.362	
+8359.694	4790.381	4592.964	4764.249	
+8361.735	4790.888	4593.177	4765.136	
+8363.776	4791.394	4593.390	4766.023	
+8365.816	4791.901	4593.603	4766.909	
+8367.857	4792.407	4593.816	4767.796	
+8369.898	4792.914	4594.029	4768.683	
+8371.939	4793.421	4594.242	4769.570	
+8373.980	4793.927	4594.455	4770.456	
+8376.020	4794.434	4594.667	4771.343	
+8378.061	4794.940	4594.880	4772.230	
+8380.102	4795.447	4595.093	4773.117	
+8382.143	4795.954	4595.306	4774.004	
+8384.184	4796.460	4595.519	4774.890	
+8386.224	4796.967	4595.732	4775.777	
+8388.265	4797.474	4595.945	4776.664	
+8390.306	4797.980	4596.158	4777.551	
+8392.347	4798.487	4596.371	4778.437	
+8394.388	4798.993	4596.584	4779.324	
+8396.429	4799.500	4596.797	4780.211	
+8398.469	4800.007	4597.010	4781.098	
+8400.510	4800.513	4597.223	4781.985	
+8402.551	4801.020	4597.436	4782.871	
+8404.592	4801.527	4597.649	4783.758	
+8406.633	4802.033	4597.862	4784.645	
+8408.673	4802.540	4598.075	4785.532	
+8410.714	4803.047	4598.288	4786.419	
+8412.755	4803.553	4598.501	4787.305	
+8414.796	4804.060	4598.714	4788.192	
+8416.837	4804.567	4598.928	4789.079	
+8418.878	4805.073	4599.141	4789.966	
+8420.918	4805.580	4599.354	4790.853	
+8422.959	4806.087	4599.567	4791.739	
+8425.000	4806.594	4599.780	4792.626	
+
+Initialization done. Wall time : 0.004 Sec
+###INFO: Initialize Resevoir -- end!
+
+Dynamic simulation with FIM
+
+Timestep 0     :      0.000 Day     Wall time: 0.000 Sec
+Timestep 1     :      1.000 Day     Wall time: 0.611 Sec
+Timestep 9     :      4.000 Day     Wall time: 0.659 Sec
+Timestep 12    :     13.000 Day     Wall time: 0.685 Sec
+Timestep 19    :     42.000 Day     Wall time: 0.837 Sec
+Timestep 22    :     50.000 Day     Wall time: 0.877 Sec
+Timestep 38    :    182.625 Day     Wall time: 1.203 Sec
+Timestep 61    :    365.250 Day     Wall time: 1.630 Sec
+Timestep 80    :    550.875 Day     Wall time: 2.052 Sec
+Timestep 99    :    733.500 Day     Wall time: 2.638 Sec
+Timestep 118   :    916.125 Day     Wall time: 3.086 Sec
+Timestep 137   :   1098.750 Day     Wall time: 3.560 Sec
+Timestep 174   :   1464.000 Day     Wall time: 4.521 Sec
+Timestep 211   :   1829.250 Day     Wall time: 5.183 Sec
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+Timestep 251   :   2194.500 Day     Wall time: 6.150 Sec
+Timestep 288   :   2559.750 Day     Wall time: 6.987 Sec
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+Timestep 328   :   2925.000 Day     Wall time: 8.805 Sec
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+Timestep 400   :   3290.250 Day     Wall time: 12.629 Sec
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.000 Day  -> 2.700 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 8.100 Day  -> 2.430 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 9.720 Day  -> 2.916 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 8.748 Day  -> 2.624 Day !
+Timestep 475   :   3655.500 Day     Wall time: 16.854 Sec
+==================================================
+Final time:                   3655.500( Day )
+ - Avg time step size .......    7.696 (475 steps)
+ - Avg Newton steps .........    3.987 (1894 succeeded + 674 wasted)
+ - Avg linear steps .........    3.378 (6397 succeeded + 2418 wasted)
+Simulation time:                   16.988 (Seconds)
+ - % Input & Partition .........    0.238 (0.040s)
+ - % Partition - ParMetis ......    0.000 (0.000s)
+ - % Input Reservoir ...........    0.069 (0.012s)
+ - % Setup Simulator ...........    0.004 (0.001s)
+ - % Initialization ............    0.021 (0.004s)
+ - % Assembling ................    6.088 (1.034s)
+ - % Assembling for LS interface    0.318 (0.054s)
+ - % Linear Solver .............   87.283 (14.828s)
+ - % Newton Step ...............    0.372 (0.063s)
+ - % Updating Properties .......    2.253 (0.383s)
+ - % Output ....................    0.463 (0.079s)
+==================================================
+
+OBJECT TIME:     3.678 s 
+
+vtune: Collection stopped.
+vtune: Using result path `/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2'
+vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-226348-cnode3696.sc' filvtune: Executing actions 12 % Loading 'systemcollector-226348-cnode3696.sc' filvtune: Executing actions 12 % Loading '226348-226389.0.trace' file             vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for `ld-linux-x86-64.so.2' 
+vtune: Warning: Cannot locate debugging information for file `/lib64/ld-linux-x86-64.so.2'.
+vtune: Executing actions 19 % Resolving information for `libc++.so'            vtune: Executing actions 19 % Resolving information for `libc++abi.so'         vtune: Executing actions 19 % Resolving information for `pinbin'               vtune: Executing actions 19 % Resolving information for `libc-dynamic.so'      vtune: Executing actions 19 % Resolving information for `libHYPRE-2.28.0.so'   
+vtune: Warning: Cannot locate debugging information for file `/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/lib/libHYPRE-2.28.0.so'.
+vtune: Executing actions 19 % Resolving information for `libtpsstool.so'       
+vtune: Warning: Cannot locate debugging information for file `/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/libtpsstool.so'.
+vtune: Executing actions 20 % Resolving information for `libtpsstool.so'       vtune: Executing actions 20 % Resolving information for `libfabric.so.1'       vtune: Executing actions 20 % Resolving information for `libstdc++.so.6'       
+vtune: Warning: Cannot locate debugging information for file `/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/libfabric/lib/libfabric.so.1'.
+vtune: Warning: Cannot locate debugging information for file `/lib/x86_64-linux-gnu/libstdc++.so.6'.
+vtune: Executing actions 20 % Resolving information for `libtcp-fi.so'         
+vtune: Warning: Cannot locate debugging information for file `/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/libfabric/lib/prov/libtcp-fi.so'.
+vtune: Executing actions 20 % Resolving information for `testOpenCAEPoro'      
+vtune: Warning: Cannot locate debugging information for file `/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/testOpenCAEPoro'.
+vtune: Executing actions 20 % Resolving information for `libc.so.6'            
+vtune: Warning: Cannot locate debugging information for file `/lib/x86_64-linux-gnu/libc.so.6'.
+vtune: Executing actions 20 % Resolving information for `libmkl_core.so.2'     vtune: Executing actions 21 % Resolving information for `libmkl_core.so.2'     vtune: Executing actions 21 % Resolving information for dangling locations     vtune: Executing actions 21 % Resolving information for `libmkl_intel_lp64.so.2
+vtune: Warning: Cannot locate debugging information for file `/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_lp64.so.2'.
+vtune: Executing actions 22 % Resolving information for `libmkl_intel_lp64.so.2vtune: Executing actions 22 % Resolving information for `libmpi.so.12'         vtune: Executing actions 22 % Resolving information for `libpetsc.so.3.19'     vtune: Executing actions 22 % Resolving information for `libmkl_avx512.so.2'   
+vtune: Warning: Cannot locate debugging information for file `/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_avx512.so.2'.
+vtune: Executing actions 22 % Resolving information for `libmkl_intel_thread.so
+vtune: Warning: Cannot locate debugging information for file `/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64/libmkl_intel_thread.so.2'.
+vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving thread name information                vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 29 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 30 % Setting data model parameters                    vtune: Executing actions 30 % Precomputing frequently used data                vtune: Executing actions 30 % Precomputing frequently used data                vtune: Executing actions 31 % Precomputing frequently used data                vtune: Executing actions 33 % Precomputing frequently used data                vtune: Executing actions 34 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 36 % Updating precomputed scalar metrics              vtune: Executing actions 37 % Updating precomputed scalar metrics              vtune: Executing actions 37 % Discarding redundant overtime data               vtune: Executing actions 39 % Discarding redundant overtime data               vtune: Executing actions 39 % Saving the result                                vtune: Executing actions 41 % Saving the result                                vtune: Executing actions 42 % Saving the result                                vtune: Executing actions 49 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 17.816s
+    CPU Time: 16.400s
+        Effective Time: 16.400s
+        Spin Time: 0s
+        Overhead Time: 0s
+    Total Thread Count: 1
+    Paused Time: 0s
+
+Top Hotspots
+Function                                      Module              CPU Time  % of CPU Time(%)
+--------------------------------------------  ------------------  --------  ----------------
+__intel_avx_rep_memset                        testOpenCAEPoro       1.584s              9.7%
+MatLUFactorNumeric_SeqBAIJ_4_NaturalOrdering  libpetsc.so.3.19      1.362s              8.3%
+hypre_BoomerAMGBuildCoarseOperatorKT          libHYPRE-2.28.0.so    1.036s              6.3%
+MatSetValues_SeqBAIJ                          libpetsc.so.3.19      0.967s              5.9%
+func@0x19a334                                 libc.so.6             0.722s              4.4%
+[Others]                                      N/A                  10.729s             65.4%
+Collection and Platform Info
+    Application Command Line: ./testOpenCAEPoro "./data/test/test.data" "verbose=1" 
+    Operating System: 5.15.0-78-TH-cn DISTRIB_ID=Ubuntu DISTRIB_RELEASE=22.04 DISTRIB_CODENAME=jammy DISTRIB_DESCRIPTION="Ubuntu 22.04.3 LTS"
+    Computer Name: cnode3696
+    Result Size: 9.4 MB 
+    Collection start time: 11:43:52 23/08/2024 UTC
+    Collection stop time: 11:44:17 23/08/2024 UTC
+    Collector Type: User-mode sampling and tracing
+    CPU
+        Name: Intel(R) Xeon(R) Processor code named Icelake
+        Frequency: 2.594 GHz
+        Logical CPU Count: 64
+        LLC size: 50.3 MB 
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: available
+
+If you want to skip descriptions of detected performance issues in the report,
+enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
+Alternatively, you may view the report in the csv format: vtune -report
+<report_name> -format=csv.
+vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            

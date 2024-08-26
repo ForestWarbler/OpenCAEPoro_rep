@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=zhj  # 任务名称
 #SBATCH --partition=mars  # 指定分区
-#SBATCH --nodes=2  # 使用的节点数
-#SBATCH --ntasks=2  # 使用的任务数
+#SBATCH --nodes=1  # 使用的节点数
+#SBATCH --ntasks=1  # 使用的任务数
 #SBATCH --cpus-per-task=64  # 每个任务使用的CPU核数
 #SBATCH --time=02:00:00  # 任务运行的最长时间 (格式为 HH:MM:SS)
 #SBATCH --output=outputs/%j.out  # 标准输出文件

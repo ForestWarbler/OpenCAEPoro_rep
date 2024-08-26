@@ -1,0 +1,127 @@
+11 [23307886106048] INFO perfrun.launcher <> - Launcher main begin
+20 [23307886106048] INFO perfrun.launcher <> - MessageCatalogInit finished
+20 [23307886106048] INFO perfrun.launcher <> - Launcher instance created
+20 [23307886106048] INFO perfrun.launcher <> - argc = 7; cmdline = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 5 --option-file /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2/config/runss.options 
+86 [23307886106048] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+86 [23307886106048] INFO perfrun.launcher <> - create file finder object
+86 [23307886106048] INFO perfrun.launcher <> - create a result directory: pattern = /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2 pid = 4294967295
+112 [23307886106048] INFO perfrun.sdk <> - checked that the directory /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2 is a local directory
+112 [23307886106048] INFO perfrun.sdk <> - the directory /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2 is located on a share or its FS ID is unknown 198183888
+112 [23307886106048] INFO perfrun.sdk <> - checked that the directory /tmp/amplxe-tmp-sysu_hpcscc_2 is a local directory
+112 [23307886106048] INFO perfrun.sdk <> - the directory /tmp/amplxe-tmp-sysu_hpcscc_2 is a local directory with FS type ID 16914836
+113 [23307886106048] INFO perfrun.launcher <> - Create a local result directory /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301 due to the user result path /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2 is located on a share
+113 [23307886106048] INFO perfrun.launcher <> - create data directory = /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0
+113 [23307886106048] INFO perfrun.launcher <> - create data directory = /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2/data.0
+115 [23307886106048] INFO perfrun.launcher <> - Creating the master collection flag
+232 [23307886106048] INFO perfrun.launcher <> - Done creating the master collection flag
+256 [23307736561216] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+256 [23307736561216] INFO perfrun.sdk <> - Allocating TMU :/tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0/systemcollector-226348-cnode3696.sc
+257 [23307736561216] INFO perfrun.system <> - Tpss based collection
+257 [23307736561216] INFO perfrun.launcher <> - plugin [ptracecollector] was disabled because it doesn't support the given collection type.
+257 [23307736561216] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+257 [23307736561216] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [23307736561216] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [23307736561216] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [23307736561216] INFO perfrun.mrte <> - system-wide mode is 0
+257 [23307736561216] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+514 [23307736561216] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0
+514 [23307736561216] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=cnode3696
+514 [23307736561216] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:amplxe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/runtime:/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/runtime
+514 [23307736561216] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/runtime:/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/runtime:/APP/u22/x86/intel/oneapi2023.2/tbb/2021.10.0/env/../lib/intel64/gcc4.8:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//libfabric/lib:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//lib/release:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//lib:/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/itac/2021.10.0/slib:/APP/u22/x86/intel/oneapi2023.2/ippcp/2021.8.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/ipp/2021.9.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/gdb/intel64/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/libipt/intel64/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/dep/lib:/APP/u22/x86/intel/oneapi2023.2/dal/2023.2.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/x64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin:/APP/u22/x86/intel/oneapi2023.2/ccl/2021.10.0/lib/cpu_gpu_dpcpp:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11
+514 [23307736561216] INFO perfrun.mrte <> - CORECLR_ENABLE_PROFILING=1
+514 [23307736561216] INFO perfrun.mrte <> - CORECLR_PROFILER={AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+514 [23307736561216] INFO perfrun.mrte <> - CORECLR_PROFILER_PATH=/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+514 [23307736561216] INFO perfrun.mrte <> - INTEL_MRTE_PROFILER_MODE=mixed
+514 [23307736561216] INFO perfrun.mrte <> - Data directory: /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0
+514 [23307736561216] INFO perfrun.mrte <> - Mrte plugin is initialized
+514 [23307736561216] INFO perfrun.launcher <> - plugin [emon] was disabled because it doesn't support the given collection type.
+514 [23307736561216] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+514 [23307736561216] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+514 [23307736561216] INFO perfrun.launcher <> - plugin [sep] was disabled because it doesn't support the given collection type.
+514 [23307736561216] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+514 [23307736561216] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+514 [23307736561216] INFO perfrun.launcher <> - plugin [aoclprofile] was disabled because it doesn't support the given collection type.
+514 [23307736561216] INFO perfrun.tpss <> - initialize tpss controller
+514 [23307736561216] INFO perfrun.tpss <> - configure collection mode: value = cpu:counters:nostack
+514 [23307736561216] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+514 [23307736561216] INFO perfrun.tpss <> - default obj-size-min=1024
+514 [23307736561216] INFO perfrun.tpss <> - default hash-table-size=0
+515 [23307736561216] INFO perfrun.launcher <> - plugin [media] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [parallelfs] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [power] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [hwloc] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [ipmwatch] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [os_counters] was disabled because it doesn't support the given collection type.
+515 [23307736561216] INFO perfrun.launcher <> - plugin [l0_metrics] was disabled because it doesn't support the given collection type.
+515 [23307886106048] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/runtime:/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/runtime:/APP/u22/x86/intel/oneapi2023.2/tbb/2021.10.0/env/../lib/intel64/gcc4.8:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//libfabric/lib:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//lib/release:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//lib:/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/itac/2021.10.0/slib:/APP/u22/x86/intel/oneapi2023.2/ippcp/2021.8.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/ipp/2021.9.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/gdb/intel64/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/libipt/intel64/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/dep/lib:/APP/u22/x86/intel/oneapi2023.2/dal/2023.2.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/x64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin:/APP/u22/x86/intel/oneapi2023.2/ccl/2021.10.0/lib/cpu_gpu_dpcpp:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11
+515 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/runtime/libittnotify_collector.so
+515 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/runtime/libittnotify_collector.so
+515 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+515 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/runtime/libittnotify_collector.so
+515 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/runtime/libittnotify_collector.so
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = cnode3696
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:amplxe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/runtime:/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/runtime
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/runtime:/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/runtime:/APP/u22/x86/intel/oneapi2023.2/tbb/2021.10.0/env/../lib/intel64/gcc4.8:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//libfabric/lib:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//lib/release:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//lib:/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/itac/2021.10.0/slib:/APP/u22/x86/intel/oneapi2023.2/ippcp/2021.8.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/ipp/2021.9.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/gdb/intel64/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/libipt/intel64/lib:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/dep/lib:/APP/u22/x86/intel/oneapi2023.2/dal/2023.2.0/lib/intel64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/x64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin:/APP/u22/x86/intel/oneapi2023.2/ccl/2021.10.0/lib/cpu_gpu_dpcpp:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11:/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/lapack-3.11
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: CORECLR_ENABLE_PROFILING = 1
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER = {AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER_PATH = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+516 [23307886106048] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_PROFILER_MODE = mixed
+516 [23307886106048] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+541 [23307886106048] INFO perfrun.launcher <> - Launcher: command line to start before modification = ./testOpenCAEPoro ./data/test/test.data verbose=1
+543 [23307886106048] INFO perfrun.launcher <> - Launcher: command line to start after modification = /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/pin -error_file /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib64/libtpsstool.so -t /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/lib32/libtpsstool.so -server_name tpss_ipc.226348 -prd_dir /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0 -- ./testOpenCAEPoro ./data/test/test.data verbose=1
+544 [23307886106048] INFO perfrun.launcher <> - ProcessCreator object was created
+546 [23307886106048] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+551 [23307736561216] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+551 [23307736561216] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+555 [23307736561216] INFO perfrun.sdk <> - runCmd: /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/sep -platform-info
+555 [23307736561216] INFO perfrun.sdk <> - runCmd started PID 226390
+590 [23307736561216] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:840
+590 [23307736561216] INFO perfrun.sdk <> - runCmd: /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/amplxe-perf stat --iostat=list
+591 [23307736561216] INFO perfrun.sdk <> - runCmd started PID 226391
+1004 [23307736561216] INFO perfrun.sdk <> - UPI platform topology is not supported on this platform via perf
+1004 [23307736561216] INFO perfrun.sdk <> - Mapped device: Network controller: FarSite Communications Ltd Device 0x6669 0000:17:00.0
+1004 [23307736561216] INFO perfrun.sdk <> - Mapped device: Network controller: FarSite Communications Ltd Device 0x6667 0000:17:00.1
+1005 [23307736561216] INFO perfrun.sdk <> - Mapped device: Network controller: FarSite Communications Ltd Device 0x6669 0000:ca:00.0
+1005 [23307736561216] INFO perfrun.sdk <> - Mapped device: Network controller: FarSite Communications Ltd Device 0x6667 0000:ca:00.1
+1008 [23307736561216] INFO perfrun.sdk <> - runCmd: /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/sep -platform-info
+1008 [23307736561216] INFO perfrun.sdk <> - runCmd started PID 226392
+1018 [23307736561216] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:840
+1018 [23307736561216] INFO perfrun.sdk <> - runCmd: /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/sep -platform-info
+1018 [23307736561216] INFO perfrun.sdk <> - runCmd started PID 226393
+1027 [23307736561216] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:840
+1027 [23307736561216] INFO perfrun.sdk <> - runCmd: /APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/amplxe-perf stat --iostat=list
+1028 [23307736561216] INFO perfrun.sdk <> - runCmd started PID 226394
+1436 [23307736561216] INFO perfrun.sdk <> - UPI platform topology is not supported on this platform via perf
+1436 [23307736561216] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+1436 [23307736561216] WARN perfrun.system <> - Could not start ContainerMapping collector, at file: vcs/perfrun1/plugins/system/src/controller.cpp:448
+1684 [23307736561216] INFO perfrun.vdso <> - Helper runtool '/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin32/amplxe-runss -dump-vdso -r /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301 --tmp-dir /tmp/amplxe-tmp-sysu_hpcscc_2' returned 1
+1866 [23307736561216] INFO perfrun.vdso <> - Helper runtool '/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64/amplxe-runss -dump-vdso -r /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301 --tmp-dir /tmp/amplxe-tmp-sysu_hpcscc_2' returned 0
+1866 [23307736561216] INFO perfrun.itt <> - start itt controller for pid #226389
+1866 [23307736561216] INFO perfrun.tpss <> - start tpss controller for pid #226389
+1917 [23307886106048] INFO perfrun.launcher <> - Launcher: all plugins were started
+1917 [23307886106048] INFO perfrun.launcher <> - DirectoryMonitor object was created
+1917 [23307886106048] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+1917 [23307886106048] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+1917 [23307886106048] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+1917 [23307886106048] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+2133 [23307886106048] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+26627 [23307886106048] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+26631 [23307736561216] INFO perfrun.itt <> - detach itt controller
+26631 [23307736561216] INFO perfrun.itt <> - detach itt controller done
+26631 [23307736561216] INFO perfrun.tpss <> - stop tpss controller
+26631 [23307736561216] INFO perfrun.sdk <> - De-allocating TMU: /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0/systemcollector-226348-cnode3696.sc
+26631 [23307736561216] INFO perfrun.system <> - closed the system trace file: /tmp/amplxe-tmp-sysu_hpcscc_2/amplxe-res-226348-7876971377434301/data.0/systemcollector-226348-cnode3696.sc
+26631 [23307886106048] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+26631 [23307886106048] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+26632 [23307886106048] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+26632 [23307886106048] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+26632 [23307886106048] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+26920 [23307886106048] INFO perfrun.launcher <> - Application exit code: 0
+26920 [23307886106048] INFO perfrun.launcher <> - Exit code: 0

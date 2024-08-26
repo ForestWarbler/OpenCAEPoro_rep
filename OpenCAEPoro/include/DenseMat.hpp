@@ -21,8 +21,33 @@
 #include <numeric>
 #include "OCPDataType.hpp"
 #include "UtilError.hpp"
+#include "immintrin.h"
+#include <stdint.h>
+#include <cstring>
+
+#define A(i, j) A[(i) + (j) * LDA]
+#define B(i, j) B[(i) + (j) * LDB]
+#define C(i, j) C[(i) + (j) * LDC]
 
 using namespace std;
+
+void scale_c_k4(double *C, int M, int N, int LDC, double scalar);
+void mydgemm_cpu_opt_k4(int M, int N, int K, double alpha, const double *A, int LDA, const double *B, int LDB, double beta, double *C, int LDC);
+void mydgemm_cpu_v4(int M, int N, int K, double alpha, const double *A, int LDA, const double *B, int LDB, double beta, double *C, int LDC);
+
+int dgemm_(const char*   transa,
+           const char*   transb,
+           const int*    m,
+           const int*    n,
+           const int*    k,
+           const double* alpha,
+           const double* A,
+           const int*    lda,
+           const double* B,
+           const int*    ldb,
+           const double* beta,
+           double*       C,
+           const int*    ldc);
 
 extern "C" {
 
@@ -56,19 +81,6 @@ double dasum_(const int* n, double* x, const int* incx);
 int idamax_(const int* n, double* x, const int* incx);
 
 /// Performs matrix-matrix operations C : = alpha * op(A) * op(B) + beta * C.
-int dgemm_(const char*   transa,
-           const char*   transb,
-           const int*    m,
-           const int*    n,
-           const int*    k,
-           const double* alpha,
-           const double* A,
-           const int*    lda,
-           const double* B,
-           const int*    ldb,
-           const double* beta,
-           double*       C,
-           const int*    ldc);
 
 ////// LAPACK functions
 

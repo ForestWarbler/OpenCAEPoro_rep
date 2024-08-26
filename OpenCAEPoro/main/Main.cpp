@@ -19,7 +19,6 @@
 #include "OCP.hpp"
 #include "PreProcess.hpp"
 
-using namespace std;
 
 /// The main() function performs dynamic simulation in five steps.
 int main(int argc, char* argv[])

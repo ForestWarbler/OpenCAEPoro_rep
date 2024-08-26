@@ -1,0 +1,55 @@
+Loading intel/oneapi2024.2
+  ERROR: Module cannot be loaded due to a conflict.
+    HINT: Might try "module unload intel" first.
+vtune: Warning: Microarchitecture performance insights will not be available. Make sure the sampling driver is installed and enabled on your system.
+vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/prorun2 -command stop.
+### WARNING: NTG will be set to 1 !
+    --> function: void PreParamGridWell::PostProcessInput()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::167
+### WARNING: ACTNUM will be set to 1 !
+    --> function: void PreParamGridWell::PostProcessInput()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::177
+### WARNING: Negative Ni: Ni[0] in Bulk[6400] = -1.103399e+03, lNi = 1.113023e+03, Nt = 2.781940e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[83200] = -1.385809e+03, lNi = 1.069554e+03, Nt = 2.707756e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[83200] = -1.510250e+02, lNi = 1.069554e+03, Nt = 2.707756e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[3] = -5.259878e+02, lNi = 1.104824e+03, Nt = 2.761221e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[102400] = -2.193443e+03, lNi = 1.130554e+03, Nt = 2.810574e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative pressure: P[243199] = -2.417672e+02
+    --> function: ReservoirState Bulk::CheckP() const
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::119
+### WARNING: Negative Ni: Ni[0] in Bulk[3] = -5.576238e+02, lNi = 1.104824e+03, Nt = 2.761221e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[134400] = -1.599107e+03, lNi = 1.125668e+03, Nt = 2.694562e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[4] = -7.493763e+03, lNi = 1.106534e+03, Nt = 2.763557e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[57681] = -1.798137e+02, lNi = 1.089775e+03, Nt = 2.753329e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[57681] = -1.758456e+03, lNi = 1.089775e+03, Nt = 2.753329e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative pressure: P[57] = -7.606202e+02
+    --> function: ReservoirState Bulk::CheckP() const
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::119
+slurmstepd: error: *** JOB 2026654 ON cnode3696 CANCELLED AT 2024-08-23T19:31:51 ***
+[0]PETSC ERROR: ------------------------------------------------------------------------
+[0]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[0]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[0]PETSC ERROR: or see https://petsc.org/release/faq/#valgrind and https://petsc.org/release/faq/
+[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[0]PETSC ERROR: to get more information on the crash.
+Abort(59) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 59) - process 0

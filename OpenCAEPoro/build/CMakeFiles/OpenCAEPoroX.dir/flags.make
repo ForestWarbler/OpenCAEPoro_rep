@@ -6,5 +6,5 @@ CXX_DEFINES = -DWITH_PETSCSOLVER=1
 
 CXX_INCLUDES = -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include -isystem /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/include -isystem /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/metis/include -isystem /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/include -isystem /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include
 
-CXX_FLAGS = -O3 -DNDEBUG -O3  -std=gnu++14
+CXX_FLAGS = -O3 -DNDEBUG -O3 
 

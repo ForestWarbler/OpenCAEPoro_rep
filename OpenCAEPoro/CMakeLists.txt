@@ -24,7 +24,7 @@ cmake_policy(SET CMP0076 NEW)
 project(OpenCAEPoroX C CXX)
 
 # Set C++ standard
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 # Set module lookup path
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/modules)

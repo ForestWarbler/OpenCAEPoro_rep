@@ -537,8 +537,52 @@ int get_SS(dBSRmat_ *A, int Istart, int Iend, int matrixDim, Mat &localAss)
     int *cpt = Ass.JA;
     val = Ass.val;
 
-    int *nDCount = (int *)malloc(sizeof(int) * nBlockRows);
-    int *nNDCount = (int *)malloc(sizeof(int) * nBlockRows);
+    // int *nDCount = (int *)malloc(sizeof(int) * nBlockRows);
+    // int *nNDCount = (int *)malloc(sizeof(int) * nBlockRows);
+    // int *globalx = (int *)malloc(blockSize * sizeof(int));
+    // int *globaly = (int *)malloc(blockSize * sizeof(int));
+    // int *bIndex = (int *)malloc(rowWidth * sizeof(int));
+    // int *xIndex = (int *)malloc(rowWidth * sizeof(int));
+
+    static int last_n = 0;
+    static int last_nb = 0;
+    static int last_rowWidth = 0;
+    static int *nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
+    static int *nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
+    static int *globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
+    static int *globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
+    // static int *bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
+    // static int *xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
+
+    if(last_n < nBlockRows){
+        last_n = nBlockRows;
+
+        std::free(nDCount);
+        std::free(nNDCount);
+
+        nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
+        nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
+    }
+
+    if(last_nb < blockSize){
+        last_nb = blockSize;
+
+        std::free(globalx);
+        std::free(globaly);
+
+        globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
+        globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
+    }
+
+    // if(last_rowWidth < rowWidth){
+    //     last_rowWidth = rowWidth;
+
+    //     std::free(bIndex);
+    //     std::free(xIndex);
+
+    //     bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
+    //     xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
+    // }
 
     for (i = 0; i < nBlockRows; i++)
     {
@@ -568,8 +612,6 @@ int get_SS(dBSRmat_ *A, int Istart, int Iend, int matrixDim, Mat &localAss)
     CHKERRQ(ierr);
 
     double *valpt = val;
-    int *globalx = (int *)malloc(blockSize * sizeof(int));
-    int *globaly = (int *)malloc(blockSize * sizeof(int));
     int b2 = blockSize * blockSize;
 
     for (Ii = 0; Ii < nBlockRows; Ii++)

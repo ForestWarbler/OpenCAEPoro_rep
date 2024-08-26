@@ -8,7 +8,7 @@ mailing list archives and consider subscribing.
   https://petsc.org/release/community/mailing/
  
 ==========================================
-Starting make run on ln202 at Wed, 21 Aug 2024 12:36:26 +0800
+Starting make run on ln202 at Fri, 23 Aug 2024 13:20:11 +0800
 Machine characteristics: Linux ln202 5.15.0-78-generic #85-Ubuntu SMP Fri Jul 7 15:25:09 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 -----------------------------------------
 Using PETSc directory: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3
@@ -246,4 +246,4 @@ gmake[3]: Nothing to be done for 'libs'.
 Now to check if the libraries are working do:
 make PETSC_DIR=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3 PETSC_ARCH=petsc_install check
 =========================================
-Finishing make run at Wed, 21 Aug 2024 12:36:28 +0800
+Finishing make run at Fri, 23 Aug 2024 13:20:14 +0800

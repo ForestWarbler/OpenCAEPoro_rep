@@ -1,6 +1,6 @@
 static const char *petscmachineinfo = "\n"
 "-----------------------------------------\n"
-"Libraries compiled on 2024-08-21 04:35:40 on ln202 \n"
+"Libraries compiled on 2024-08-23 05:19:24 on ln202 \n"
 "Machine characteristics: Linux-5.15.0-78-generic-x86_64-with-glibc2.35\n"
 "Using PETSc directory: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3\n"
 "Using PETSc arch: petsc_install\n"
