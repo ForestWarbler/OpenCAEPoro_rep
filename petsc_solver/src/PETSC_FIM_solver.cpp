@@ -105,46 +105,43 @@ int FIM_solver_p_cpr(int is_thermal, int myid, int num_procs, int nb, int *allLo
     // int *globaly = (int *)malloc(blockSize * sizeof(int));
     // int *bIndex = (int *)malloc(rowWidth * sizeof(int));
     // int *xIndex = (int *)malloc(rowWidth * sizeof(int));
+    static int *nDCount = nullptr;
+    static int *nNDCount = nullptr;
+    static int *globalx = nullptr;
+    static int *globaly = nullptr;
+    static int *bIndex = nullptr;
+    static int *xIndex = nullptr;
 
-    static int last_n = 0;
-    static int last_nb = 0;
-    static int last_rowWidth = 0;
-    static int *nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-    static int *nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-    static int *globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-    static int *globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-    static int *bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-    static int *xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-
-    if(last_n < nBlockRows){
-        last_n = nBlockRows;
-
-        std::free(nDCount);
-        std::free(nNDCount);
-
-        nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-        nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
+    if(nDCount == nullptr)
+    {
+        PetscMalloc1(sizeof(int) * nBlockRows, &nDCount);
     }
 
-    if(last_nb < blockSize){
-        last_nb = blockSize;
-
-        std::free(globalx);
-        std::free(globaly);
-
-        globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-        globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
+    if(nNDCount == nullptr)
+    {
+        PetscMalloc1(sizeof(int) * nBlockRows, &nNDCount);
     }
 
-    if(last_rowWidth < rowWidth){
-        last_rowWidth = rowWidth;
-
-        std::free(bIndex);
-        std::free(xIndex);
-
-        bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-        xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
+    if(globalx == nullptr)
+    {
+        PetscMalloc1(blockSize * sizeof(int), &globalx);
     }
+
+    if(globaly == nullptr)
+    {
+        PetscMalloc1(blockSize * sizeof(int), &globaly);
+    }
+
+    if(bIndex == nullptr)
+    {
+        PetscMalloc1(rowWidth * sizeof(int), &bIndex);
+    }
+
+    if(xIndex == nullptr)
+    {
+        PetscMalloc1(rowWidth * sizeof(int), &xIndex);
+    }
+
 
     MPI_Barrier(MPI_COMM_WORLD);
 
@@ -466,47 +463,42 @@ int FIM_solver_p_msp(int is_thermal, int myid, int num_procs, int nb, int *allLo
     // int *globaly = (int *)malloc(blockSize * sizeof(int));
     // int *bIndex = (int *)malloc(rowWidth * sizeof(int));
     // int *xIndex = (int *)malloc(rowWidth * sizeof(int));
+    static int *nDCount = nullptr;
+    static int *nNDCount = nullptr;
+    static int *globalx = nullptr;
+    static int *globaly = nullptr;
+    static int *bIndex = nullptr;
+    static int *xIndex = nullptr;
 
-    static int last_n = 0;
-    static int last_nb = 0;
-    static int last_rowWidth = 0;
-    static int *nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-    static int *nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-    static int *globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-    static int *globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-    static int *bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-    static int *xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-
-    if(last_n < nBlockRows){
-        last_n = nBlockRows;
-
-        std::free(nDCount);
-        std::free(nNDCount);
-
-        nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-        nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
+    if(nDCount == nullptr)
+    {
+        PetscMalloc1(sizeof(int) * nBlockRows, &nDCount);
     }
 
-    if(last_nb < blockSize){
-        last_nb = blockSize;
-
-        std::free(globalx);
-        std::free(globaly);
-
-        globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-        globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
+    if(nNDCount == nullptr)
+    {
+        PetscMalloc1(sizeof(int) * nBlockRows, &nNDCount);
     }
 
-    if(last_rowWidth < rowWidth){
-        last_rowWidth = rowWidth;
-
-        std::free(bIndex);
-        std::free(xIndex);
-
-        bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-        xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
+    if(globalx == nullptr)
+    {
+        PetscMalloc1(blockSize * sizeof(int), &globalx);
     }
 
+    if(globaly == nullptr)
+    {
+        PetscMalloc1(blockSize * sizeof(int), &globaly);
+    }
+
+    if(bIndex == nullptr)
+    {
+        PetscMalloc1(rowWidth * sizeof(int), &bIndex);
+    }
+
+    if(xIndex == nullptr)
+    {
+        PetscMalloc1(rowWidth * sizeof(int), &xIndex);
+    }
     MPI_Barrier(MPI_COMM_WORLD);
     start = MPI_Wtime();
 
@@ -556,7 +548,8 @@ int FIM_solver_p_msp(int is_thermal, int myid, int num_procs, int nb, int *allLo
     CHKERRQ(ierr);
 
     double *valpt = val;
-
+    // int *globalx = (int *)malloc(blockSize * sizeof(int));
+    // int *globaly = (int *)malloc(blockSize * sizeof(int));
     for (Ii = 0; Ii < nBlockRows; Ii++)
     {
         for (i = 0; i < blockSize; i++)
@@ -591,6 +584,7 @@ int FIM_solver_p_msp(int is_thermal, int myid, int num_procs, int nb, int *allLo
     ierr = VecDuplicate(b, &x);
     CHKERRQ(ierr);
 
+    // int *bIndex = (int *)malloc(rowWidth * sizeof(int));
     for (i = 0; i < rowWidth; i++)
     {
         bIndex[i] = Istart * blockSize + i;
@@ -738,6 +732,7 @@ int FIM_solver_p_msp(int is_thermal, int myid, int num_procs, int nb, int *allLo
     // ierr = PetscPrintf(PETSC_COMM_WORLD, "number iterations = %d\n", iters);
     int iter_done = iters;
 
+    // int *xIndex = (int *)malloc(rowWidth * sizeof(int));
     for (i = 0; i < rowWidth; i++)
     {
         xIndex[i] = i + Istart * blockSize; // !!!!
@@ -917,45 +912,41 @@ int FIM_solver_p_bamg(int is_thermal, int myid, int num_procs, int nb, int *allL
     // int *globaly = (int *)malloc(blockSize * sizeof(int));
     // int *bIndex = (int *)malloc(rowWidth * sizeof(int));
     // int *xIndex = (int *)malloc(rowWidth * sizeof(int));
+    static int *nDCount = nullptr;
+    static int *nNDCount = nullptr;
+    static int *globalx = nullptr;
+    static int *globaly = nullptr;
+    static int *bIndex = nullptr;
+    static int *xIndex = nullptr;
 
-    static int last_n = 0;
-    static int last_nb = 0;
-    static int last_rowWidth = 0;
-    static int *nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-    static int *nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-    static int *globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-    static int *globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-    static int *bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-    static int *xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-
-    if(last_n < nBlockRows){
-        last_n = nBlockRows;
-
-        std::free(nDCount);
-        std::free(nNDCount);
-
-        nDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
-        nNDCount = static_cast<int *>(aligned_alloc(64, sizeof(int) * nBlockRows));
+    if(nDCount == nullptr)
+    {
+        PetscMalloc1(sizeof(int) * nBlockRows, &nDCount);
     }
 
-    if(last_nb < blockSize){
-        last_nb = blockSize;
-
-        std::free(globalx);
-        std::free(globaly);
-
-        globalx = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
-        globaly = static_cast<int *>(aligned_alloc(64, sizeof(int) * blockSize));
+    if(nNDCount == nullptr)
+    {
+        PetscMalloc1(sizeof(int) * nBlockRows, &nNDCount);
     }
 
-    if(last_rowWidth < rowWidth){
-        last_rowWidth = rowWidth;
+    if(globalx == nullptr)
+    {
+        PetscMalloc1(blockSize * sizeof(int), &globalx);
+    }
 
-        std::free(bIndex);
-        std::free(xIndex);
+    if(globaly == nullptr)
+    {
+        PetscMalloc1(blockSize * sizeof(int), &globaly);
+    }
 
-        bIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
-        xIndex = static_cast<int *>(aligned_alloc(64, sizeof(int) * rowWidth));
+    if(bIndex == nullptr)
+    {
+        PetscMalloc1(rowWidth * sizeof(int), &bIndex);
+    }
+
+    if(xIndex == nullptr)
+    {
+        PetscMalloc1(rowWidth * sizeof(int), &xIndex);
     }
 
     // MPI_Barrier(MPI_COMM_WORLD);
@@ -1006,6 +997,8 @@ int FIM_solver_p_bamg(int is_thermal, int myid, int num_procs, int nb, int *allL
     CHKERRQ(ierr);
 
     double *valpt = val;
+    // int *globalx = (int *)malloc(blockSize * sizeof(int));
+    // int *globaly = (int *)malloc(blockSize * sizeof(int));
     for (Ii = 0; Ii < nBlockRows; Ii++)
     {
         for (i = 0; i < blockSize; i++)
@@ -1040,6 +1033,7 @@ int FIM_solver_p_bamg(int is_thermal, int myid, int num_procs, int nb, int *allL
     ierr = VecDuplicate(b, &x);
     CHKERRQ(ierr);
 
+    // int *bIndex = (int *)malloc(rowWidth * sizeof(int));
     for (i = 0; i < rowWidth; i++)
     {
         bIndex[i] = Istart * blockSize + i;
@@ -1131,6 +1125,8 @@ int FIM_solver_p_bamg(int is_thermal, int myid, int num_procs, int nb, int *allL
         fclose(fp);
     }
 
+
+    // int *xIndex = (int *)malloc(rowWidth * sizeof(int));
     for (i = 0; i < rowWidth; i++)
     {
         xIndex[i] = i + Istart * blockSize; // !!!!

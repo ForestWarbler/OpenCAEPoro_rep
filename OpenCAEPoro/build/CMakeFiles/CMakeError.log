@@ -1,20 +1,20 @@
 Determining if the function sgemm_ exists failed with the following output:
 Change Dir: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d519/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5d519.dir/build.make CMakeFiles/cmTC_5d519.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7cb4d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7cb4d.dir/build.make CMakeFiles/cmTC_7cb4d.dir/build
 gmake[1]: Entering directory '/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5d519.dir/CheckFunctionExists.c.o
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc   -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_5d519.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_5d519.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_5d519.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_7cb4d.dir/CheckFunctionExists.c.o
+/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc   -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_7cb4d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_7cb4d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_7cb4d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 icc: remark #10441: The Intel(R) C++ Compiler Classic (ICC) is deprecated and will be removed from product release in the second half of 2023. The Intel(R) oneAPI DPC++/C++ Compiler (ICX) is the recommended compiler moving forward. Please transition to use this compiler. Use '-diag-disable=10441' to disable this message.
-Linking C executable cmTC_5d519
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d519.dir/link.txt --verbose=1
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_5d519.dir/CheckFunctionExists.c.o -o cmTC_5d519 
+Linking C executable cmTC_7cb4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cb4d.dir/link.txt --verbose=1
+/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiicc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_7cb4d.dir/CheckFunctionExists.c.o -o cmTC_7cb4d 
 icc: remark #10441: The Intel(R) C++ Compiler Classic (ICC) is deprecated and will be removed from product release in the second half of 2023. The Intel(R) oneAPI DPC++/C++ Compiler (ICX) is the recommended compiler moving forward. Please transition to use this compiler. Use '-diag-disable=10441' to disable this message.
-ld: CMakeFiles/cmTC_5d519.dir/CheckFunctionExists.c.o: in function `main':
+ld: CMakeFiles/cmTC_7cb4d.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x30): undefined reference to `sgemm_'
-gmake[1]: *** [CMakeFiles/cmTC_5d519.dir/build.make:100: cmTC_5d519] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_7cb4d.dir/build.make:100: cmTC_7cb4d] Error 1
 gmake[1]: Leaving directory '/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_5d519/fast] Error 2
+gmake: *** [Makefile:127: cmTC_7cb4d/fast] Error 2
 
 
 

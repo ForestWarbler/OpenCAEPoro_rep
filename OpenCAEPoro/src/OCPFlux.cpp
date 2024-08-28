@@ -174,14 +174,18 @@ void OCPFlux01::AssembleMatFIM(const BulkConnPair& bp, const OCP_USI& c, const B
                 -transIJ * rhoWghtD * bvs.rhoP[dId_np_j] * dGamma;
 
             // dS
-            for (USI k = 0; k < np; k++) {
+            for(USI k = 0; k < np; k++) {
+                // dFdXsB
                 dFdXsB[(i + 1) * ncol2 + k] +=
                     transIJ * bvs.dPcdS[bId_np_j * np + k];
+                // dFdXsE
                 dFdXsE[(i + 1) * ncol2 + k] -=
                     transIJ * bvs.dPcdS[eId_np_j * np + k];
+                // dFdXsU
                 dFdXsU[(i + 1) * ncol2 + k] +=
                     Akd * bvs.dKrdS[uId_np_j * np + k] / mu * xi * xij * dP;
             }
+
             // dxij
             for (USI k = 0; k < nc; k++) {
                 rhox = bvs.rhox[uId_np_j * nc + k];

@@ -6,25 +6,17 @@
 void inverse(double *A, int N)
 {
     // int *IPIV = new int[N];
-    // int LWORK = N * N;
-    // double *WORK = new double[LWORK];
-    static int *IPIV = static_cast<int *>(aligned_alloc(64, N * sizeof(int)));
-    int LWORK = N * N;
-    static int last_N = 0;
-    static double *WORK = static_cast<double *>(aligned_alloc(64, LWORK * sizeof(double)));
-
-    int INFO;
-
-    if (last_N < N)
-    {
-        last_N = N;
-
-        std::free(IPIV);
-        std::free(WORK);
-
-        IPIV = static_cast<int *>(aligned_alloc(64, N * sizeof(int)));
-        WORK = static_cast<double *>(aligned_alloc(64, LWORK * sizeof(double)));
+    static int *IPIV = nullptr;
+    if(IPIV == nullptr) {
+        PetscMalloc1(sizeof(int) * N, &IPIV);
     }
+    int LWORK = N * N;
+    // double *WORK = new double[LWORK];
+    static double *WORK = nullptr;
+    if(WORK == nullptr) {
+        PetscMalloc1(sizeof(double) * LWORK, &WORK);
+    }
+    int INFO;
 
     dgetrf_(&N, &N, A, &N, IPIV, &INFO);
 
@@ -229,24 +221,9 @@ void smat_inv_2x2(double *a)
 void decoup_abf_2x2(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow)
 {
     int nb2 = nb * nb;
-    // double *smat = (double *)malloc(nb2 * sizeof(double));
-    // double *binv = (double *)malloc(nb2 * sizeof(double));
-    // double *svec = (double *)malloc(nb * sizeof(double));
-    static double *smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    static int last_nb = 0;
-
-    if(last_nb < nb){
-        last_nb = nb;
-        std::free(smat);
-        std::free(binv);
-        std::free(svec);
-
-        smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    }
+    double *smat = (double *)malloc(nb2 * sizeof(double));
+    double *binv = (double *)malloc(nb2 * sizeof(double));
+    double *svec = (double *)malloc(nb * sizeof(double));
 
     int i, j, ibegin, iend;
     for (i = 0; i < nrow; ++i)
@@ -289,25 +266,9 @@ void decoup_abf_2x2(double *val, double *rhs, int *rpt, int *cpt, int nb, int nr
 void decoup_abf_4x4(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow)
 {
     int nb2 = nb * nb;
-    // double *smat = (double *)malloc(nb2 * sizeof(double));
-    // double *binv = (double *)malloc(nb2 * sizeof(double));
-    // double *svec = (double *)malloc(nb * sizeof(double));
-
-    static double *smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    static int last_nb = 0;
-
-    if(last_nb < nb){
-        last_nb = nb;
-        std::free(smat);
-        std::free(binv);
-        std::free(svec);
-
-        smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    }
+    double *smat = (double *)malloc(nb2 * sizeof(double));
+    double *binv = (double *)malloc(nb2 * sizeof(double));
+    double *svec = (double *)malloc(nb * sizeof(double));
 
     int i, j, ibegin, iend;
     for (i = 0; i < nrow; ++i)
@@ -341,34 +302,19 @@ void decoup_abf_4x4(double *val, double *rhs, int *rpt, int *cpt, int nb, int nr
         rhs += nb;
     }
 
-    // free(smat);
-    // free(binv);
-    // free(svec);
+    free(smat);
+    free(binv);
+    free(svec);
 }
 
 // ABF
 void decoup_abf_nb(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow)
 {
     int nb2 = nb * nb;
-    // double *smat = (double *)malloc(nb2 * sizeof(double));
-    // double *binv = (double *)malloc(nb2 * sizeof(double));
-    // double *svec = (double *)malloc(nb * sizeof(double));
+    double *smat = (double *)malloc(nb2 * sizeof(double));
+    double *binv = (double *)malloc(nb2 * sizeof(double));
+    double *svec = (double *)malloc(nb * sizeof(double));
 
-    static double *smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    static int last_nb = 0;
-
-    if(last_nb < nb){
-        last_nb = nb;
-        std::free(smat);
-        std::free(binv);
-        std::free(svec);
-
-        smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    }
     int i, j, ibegin, iend;
     for (i = 0; i < nrow; ++i)
     {
@@ -401,9 +347,9 @@ void decoup_abf_nb(double *val, double *rhs, int *rpt, int *cpt, int nb, int nro
         rhs += nb;
     }
 
-    // free(smat);
-    // free(binv);
-    // free(svec);
+    free(smat);
+    free(binv);
+    free(svec);
 }
 
 // ABF decoupling method
@@ -429,25 +375,10 @@ void decouple_abf(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow
 void decouple_QI(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow, int is_thermal)
 {
     int nb2 = nb * nb;
-    // double *smat = (double *)malloc(nb2 * sizeof(double));
-    // double *binv = (double *)malloc(nb2 * sizeof(double));
-    // double *svec = (double *)malloc(nb * sizeof(double));
+    double *smat = (double *)malloc(nb2 * sizeof(double));
+    double *binv = (double *)malloc(nb2 * sizeof(double));
+    double *svec = (double *)malloc(nb * sizeof(double));
 
-    static double *smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    static int last_nb = 0;
-
-    if(last_nb < nb){
-        last_nb = nb;
-        std::free(smat);
-        std::free(binv);
-        std::free(svec);
-
-        smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    }
     int i, j, l, ibegin, iend;
     for (i = 0; i < nrow; ++i)
     {
@@ -494,34 +425,18 @@ void decouple_QI(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow,
         rhs += nb;
     }
 
-    //free(smat);
-    //free(binv);
-    //free(svec);
+    free(smat);
+    free(binv);
+    free(svec);
 }
 
 // Analytical decoupling method
 void decouple_anl(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow, int is_thermal)
 {
     int nb2 = nb * nb;
-    // double *smat = (double *)malloc(nb2 * sizeof(double));
-    // double *binv = (double *)malloc(nb2 * sizeof(double));
-    // double *svec = (double *)malloc(nb * sizeof(double));
-
-    static double *smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    static int last_nb = 0;
-
-    if(last_nb < nb){
-        last_nb = nb;
-        std::free(smat);
-        std::free(binv);
-        std::free(svec);
-
-        smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    }
+    double *smat = (double *)malloc(nb2 * sizeof(double));
+    double *binv = (double *)malloc(nb2 * sizeof(double));
+    double *svec = (double *)malloc(nb * sizeof(double));
 
     int i, j, l, ibegin, iend;
     for (i = 0; i < nrow; ++i)
@@ -570,34 +485,18 @@ void decouple_anl(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow
         rhs += nb;
     }
 
-    // free(smat);
-    // free(binv);
-    // free(svec);
+    free(smat);
+    free(binv);
+    free(svec);
 }
 
 // Semi-analytical decoupling method
 void decouple_sem(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow, int is_thermal)
 {
     int nb2 = nb * nb;
-    // double *smat = (double *)malloc(nb2 * sizeof(double));
-    // double *binv = (double *)malloc(nb2 * sizeof(double));
-    // double *svec = (double *)malloc(nb * sizeof(double));
-
-    static double *smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-    static double *svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    static int last_nb = 0;
-
-    if(last_nb < nb){
-        last_nb = nb;
-        std::free(smat);
-        std::free(binv);
-        std::free(svec);
-
-        smat = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        binv = static_cast<double *>(aligned_alloc(64, nb2 * sizeof(double)));
-        svec = static_cast<double *>(aligned_alloc(64, nb * sizeof(double)));
-    }
+    double *smat = (double *)malloc(nb2 * sizeof(double));
+    double *binv = (double *)malloc(nb2 * sizeof(double));
+    double *svec = (double *)malloc(nb * sizeof(double));
 
     int i, j, l, ibegin, iend;
     for (i = 0; i < nrow; ++i)
@@ -656,9 +555,9 @@ void decouple_sem(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow
         rhs += nb;
     }
 
-    // free(smat);
-    // free(binv);
-    // free(svec);
+    free(smat);
+    free(binv);
+    free(svec);
 }
 
 void decoup(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow, int decoup_type, int is_thermal)
