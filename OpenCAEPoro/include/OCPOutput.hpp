@@ -157,6 +157,11 @@ public:
     /// Combine all files into 1 by Master process
     void PostProcess(const string& dir, const string& filename, const OCP_INT& numproc) const;
 
+    friend std::vector<double> serializeSumItem(const SumItem& item);;
+    friend SumItem deserializeSumItem(const std::vector<double>& serialized, size_t& offset);
+    friend void gatherSumdata(const std::vector<SumItem>& Sumdata, int rank, int size);
+
+
 protected:
     vector<SumItem> Sumdata; ///< Contains all information to be printed.
 
@@ -191,6 +196,10 @@ protected:
     OCPType_Sum<OCPIJK> SGAS; ///< Gas saturation of bulk.
     OCPType_Sum<OCPIJK> SWAT; ///< Water saturation of bulk.
 };
+
+std::vector<double> serializeSumItem(const SumItem& item);
+SumItem deserializeSumItem(const std::vector<double>& serialized, size_t& offset);
+void gatherSumdata(const std::vector<SumItem>& Sumdata, int rank, int size);
 
 /// Collect important information of each time step for fast review.
 class CriticalInfo

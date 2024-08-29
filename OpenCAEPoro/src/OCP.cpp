@@ -145,9 +145,15 @@ void OpenCAEPoroX::RunSimulation()
 void OpenCAEPoroX::OutputResults() const
 {
     GetWallTime timer;
+    // GetWallTime timerprint;
     timer.Start();
+    // timerprint.Start();
     output.PrintInfo();
+    // cout << "print time: " << timerprint.Stop() / TIME_S2MS << endl;
+    // GetWallTime timerpost;
+    // timerpost.Start();
     output.PostProcess();
+    // cout << "post time: " << timerpost.Stop() / TIME_S2MS << endl;
     OCPTIME_TOTAL += timer.Stop() / TIME_S2MS;
       
     OutputTimeMain(cout.rdbuf());

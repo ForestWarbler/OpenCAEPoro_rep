@@ -1,18 +1,18 @@
 Determining if the function sgemm_ exists failed with the following output:
 Change Dir: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c5c00/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c5c00.dir/build.make CMakeFiles/cmTC_c5c00.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_db2b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_db2b0.dir/build.make CMakeFiles/cmTC_db2b0.dir/build
 gmake[1]: Entering directory '/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c5c00.dir/CheckFunctionExists.c.o
-/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/bin/mpicc   -O3 -xHost -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_c5c00.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c5c00.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c5c00.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c5c00
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5c00.dir/link.txt --verbose=1
-/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/bin/mpicc -O3 -xHost -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_c5c00.dir/CheckFunctionExists.c.o -o cmTC_c5c00 
-ld: CMakeFiles/cmTC_c5c00.dir/CheckFunctionExists.c.o: in function `main':
+Building C object CMakeFiles/cmTC_db2b0.dir/CheckFunctionExists.c.o
+/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/bin/mpicc   -O3 -xHost -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_db2b0.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_db2b0.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_db2b0.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_db2b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db2b0.dir/link.txt --verbose=1
+/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/bin/mpicc -O3 -xHost -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_db2b0.dir/CheckFunctionExists.c.o -o cmTC_db2b0 
+ld: CMakeFiles/cmTC_db2b0.dir/CheckFunctionExists.c.o: in function `main':
 /usr/share/cmake-3.22/Modules/CheckFunctionExists.c:17: undefined reference to `sgemm_'
-gmake[1]: *** [CMakeFiles/cmTC_c5c00.dir/build.make:100: cmTC_c5c00] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_db2b0.dir/build.make:100: cmTC_db2b0] Error 1
 gmake[1]: Leaving directory '/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_c5c00/fast] Error 2
+gmake: *** [Makefile:127: cmTC_db2b0/fast] Error 2
 
 
 

@@ -266,9 +266,26 @@ void decoup_abf_2x2(double *val, double *rhs, int *rpt, int *cpt, int nb, int nr
 void decoup_abf_4x4(double *val, double *rhs, int *rpt, int *cpt, int nb, int nrow)
 {
     int nb2 = nb * nb;
-    double *smat = (double *)malloc(nb2 * sizeof(double));
-    double *binv = (double *)malloc(nb2 * sizeof(double));
-    double *svec = (double *)malloc(nb * sizeof(double));
+    // double *smat = (double *)malloc(nb2 * sizeof(double));
+    // double *binv = (double *)malloc(nb2 * sizeof(double));
+    // double *svec = (double *)malloc(nb * sizeof(double));
+
+    static double *smat = nullptr;
+    static double *binv = nullptr;
+    static double *svec = nullptr;
+
+    if (smat == nullptr)
+    {
+        PetscMalloc1(sizeof(double) * nb2, &smat);
+    }
+    if (binv == nullptr)
+    {
+        PetscMalloc1(sizeof(double) * nb2, &binv);
+    }
+    if (svec == nullptr)
+    {
+        PetscMalloc1(sizeof(double) * nb, &svec);
+    }
 
     int i, j, ibegin, iend;
     for (i = 0; i < nrow; ++i)
@@ -302,9 +319,9 @@ void decoup_abf_4x4(double *val, double *rhs, int *rpt, int *cpt, int nb, int nr
         rhs += nb;
     }
 
-    free(smat);
-    free(binv);
-    free(svec);
+    // free(smat);
+    // free(binv);
+    // free(svec);
 }
 
 // ABF

@@ -1,0 +1,426 @@
+Loading mpi/openmpi/5.0.0-icc-oneapi2023.2-ch4
+  ERROR: Module cannot be loaded due to a conflict.
+    HINT: Might try "module unload mpi" first.
+Job running on cnode3754
+cnode3755
+cnode3756
+cnode3757 with 64 tasks per node.
+Total number of tasks: 256
+Total number of nodes: 4
+=========================================
+OpenCAEPoroX Version-0.5.0
+=========================================
+###INFO: Input Grid File -- begin!
+
+-------------------------------------
+Check Grid param ... begin
+Check Grid param ... done
+-------------------------------------
+### WARNING: NTG will be set to 1 !
+    --> function: void PreParamGridWell::PostProcessInput()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::167
+### WARNING: ACTNUM will be set to 1 !
+    --> function: void PreParamGridWell::PostProcessInput()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/PreParamGridWell.cpp::177
+###INFO: Input Grid File -- end!
+###INFO: Setup Grid and Well -- begin!
+###INFO: Setup Grid -- begin!
+  Number of inactive cells is 0 (0%)
+
+---------------------
+GRID
+---------------------
+  depthMax = 8423.75
+  depthMin = 8326.25
+  dxMax    = 125
+  dxMin    = 125
+  dyMax    = 125
+  dyMin    = 125
+  dzMax    = 2.5
+  dzMin    = 2.5
+###INFO: Setup Grid -- end!
+###INFO: Setup Connection between Grid and Well -- begin!
+###INFO: Setup Connection between Grid and Well -- end!
+###INFO: Setup Grid and Well -- end!
+###INFO: Set Initial Partition -- begin!
+###INFO: Set Initial Partition -- end!
+###INFO: ParMetis Partition -- begin!
+###INFO: ParMetis Partition -- end!
+###INFO: Set Distribution -- begin!
+###INFO: Set Distribution -- end!
+###INFO: Set Domain -- begin!
+###INFO: Set Domain -- end!
+###INFO: Input Reservoir Param -- begin!
+###INFO: Input Reservoir Param -- end!
+###INFO: Master Process Distribute Grid Params -- begin!
+###INFO: Master Process Distribute Grid Params -- end!
+###INFO: Input Reservoir Params -- begin!
+###INFO: Input Reservoir Params -- end!
+###INFO: Input Control Params -- begin!
+###INFO: Input Control Params -- end!
+###INFO: Input Output Params -- begin!
+###INFO: Input Output Params -- end!
+###INFO: Setup Simulator -- begin!
+###INFO: Setup Simulator -- end!
+###INFO: Initialize Resevoir -- begin!
+
+---------------------
+Pressure Distribution
+---------------------
+   Depth            Poil            Pgas            Pwat         
+### WARNING: Negative Ni: Ni[1] in Bulk[214] = -4.843450e+02, lNi = 1.417585e+03, Nt = 2.746383e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[417] = -2.581143e+03, lNi = 1.096173e+03, Nt = 2.746345e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[417] = -3.013445e+02, lNi = 1.095540e+03, Nt = 2.746581e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[434] = -5.156836e+02, lNi = 1.099732e+03, Nt = 2.755735e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[491] = -2.284130e+03, lNi = 1.094164e+03, Nt = 2.749475e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[359] = -2.029409e+03, lNi = 1.094156e+03, Nt = 2.749466e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[1142] = -6.591764e+02, lNi = 1.098321e+03, Nt = 2.765565e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[1205] = -6.591764e+02, lNi = 1.098321e+03, Nt = 2.765565e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[636] = -6.591764e+02, lNi = 1.098321e+03, Nt = 2.765565e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[665] = -1.986343e+03, lNi = 1.403768e+03, Nt = 2.890678e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[500] = -1.119022e+03, lNi = 1.403767e+03, Nt = 2.891104e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[499] = -4.481725e+02, lNi = 1.404246e+03, Nt = 2.891597e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[638] = -3.330190e+02, lNi = 1.405058e+03, Nt = 2.979444e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[394] = -2.629744e+02, lNi = 1.405057e+03, Nt = 2.964152e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[623] = -1.732174e+03, lNi = 1.095856e+03, Nt = 2.757239e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[502] = -2.919726e+03, lNi = 1.095951e+03, Nt = 2.764845e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[666] = -2.804525e+02, lNi = 1.402654e+03, Nt = 2.794626e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[665] = -2.129118e+03, lNi = 1.095604e+03, Nt = 2.770896e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[0] in Bulk[500] = -2.165839e+03, lNi = 1.095603e+03, Nt = 2.770937e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[642] = -5.595401e+02, lNi = 1.334317e+03, Nt = 2.721319e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[921] = -7.048421e+03, lNi = 1.382746e+03, Nt = 2.336518e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+### WARNING: Negative Ni: Ni[1] in Bulk[117] = -4.150812e+02, lNi = 1.382289e+03, Nt = 2.593410e+03
+    --> function: ReservoirState Bulk::CheckNi()
+    --> file:     /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/src/Bulk.cpp::164
+8325.000	4781.770	4589.348	4749.175	
+8327.041	4782.276	4589.561	4750.062	
+8329.082	4782.783	4589.773	4750.948	
+8331.122	4783.289	4589.986	4751.835	
+8333.163	4783.796	4590.199	4752.722	
+8335.204	4784.302	4590.411	4753.608	
+8337.245	4784.809	4590.624	4754.495	
+8339.286	4785.316	4590.837	4755.382	
+8341.327	4785.822	4591.049	4756.269	
+8343.367	4786.329	4591.262	4757.155	
+8345.408	4786.835	4591.475	4758.042	
+8347.449	4787.342	4591.688	4758.929	
+8349.490	4787.848	4591.900	4759.815	
+8351.531	4788.355	4592.113	4760.702	
+8353.571	4788.861	4592.326	4761.589	
+8355.612	4789.368	4592.539	4762.476	
+8357.653	4789.875	4592.752	4763.362	
+8359.694	4790.381	4592.964	4764.249	
+8361.735	4790.888	4593.177	4765.136	
+8363.776	4791.394	4593.390	4766.023	
+8365.816	4791.901	4593.603	4766.909	
+8367.857	4792.407	4593.816	4767.796	
+8369.898	4792.914	4594.029	4768.683	
+8371.939	4793.421	4594.242	4769.570	
+8373.980	4793.927	4594.455	4770.456	
+8376.020	4794.434	4594.667	4771.343	
+8378.061	4794.940	4594.880	4772.230	
+8380.102	4795.447	4595.093	4773.117	
+8382.143	4795.954	4595.306	4774.004	
+8384.184	4796.460	4595.519	4774.890	
+8386.224	4796.967	4595.732	4775.777	
+8388.265	4797.474	4595.945	4776.664	
+8390.306	4797.980	4596.158	4777.551	
+8392.347	4798.487	4596.371	4778.437	
+8394.388	4798.993	4596.584	4779.324	
+8396.429	4799.500	4596.797	4780.211	
+8398.469	4800.007	4597.010	4781.098	
+8400.510	4800.513	4597.223	4781.985	
+8402.551	4801.020	4597.436	4782.871	
+8404.592	4801.527	4597.649	4783.758	
+8406.633	4802.033	4597.862	4784.645	
+8408.673	4802.540	4598.075	4785.532	
+8410.714	4803.047	4598.288	4786.419	
+8412.755	4803.553	4598.501	4787.305	
+8414.796	4804.060	4598.714	4788.192	
+8416.837	4804.567	4598.928	4789.079	
+8418.878	4805.073	4599.141	4789.966	
+8420.918	4805.580	4599.354	4790.853	
+8422.959	4806.087	4599.567	4791.739	
+8425.000	4806.594	4599.780	4792.626	
+###INFO: Initialize Resevoir -- end!
+### WARNING: Cut time step size: 3.000 Day  -> 0.900 Day !
+### WARNING: Cut time step size: 2.000 Day  -> 0.600 Day !
+### WARNING: Cut time step size: 2.000 Day  -> 0.600 Day !
+### WARNING: Cut time step size: 2.000 Day  -> 0.600 Day !
+### WARNING: Cut time step size: 4.000 Day  -> 1.200 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 5.000 Day  -> 1.500 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: Cut time step size: 3.000 Day  -> 0.900 Day !
+### WARNING: Cut time step size: 10.000 Day  -> 3.000 Day !
+### WARNING: NR not fully converged!
+### WARNING: Cut time step size: 3.000 Day  -> 0.900 Day !
+==================================================
+Final time:                   3600.000( Day )
+ - Avg time step size .......   10.198 (353 steps)
+ - Avg Newton steps .........    3.785 (1336 succeeded + 128 wasted)
+ - Avg linear steps .........    6.869 (9177 succeeded + 1257 wasted)
+Simulation time:                  745.427 (Seconds)
+ - % Input & Partition .........    0.110 (0.823s)
+ - % Partition - ParMetis ......    0.049 (0.362s)
+ - % Input Reservoir ...........    0.008 (0.056s)
+ - % Setup Simulator ...........    0.000 (0.001s)
+ - % Initialization ............    0.001 (0.004s)
+ - % Assembling ................    0.345 (2.575s)
+ - % Assembling for LS interface    0.156 (1.165s)
+ - % Linear Solver .............   98.595 (734.957s)
+ - % Newton Step ...............    0.079 (0.585s)
+ - % Updating Properties .......    0.198 (1.479s)
+ - % Output ....................    0.364 (2.710s)
+==================================================
+
+OBJECT TIME:    15.757 s 
+
+Item                          Average     Varance         Max         Min
+Grid Num                         1000          16        1044         914
+Updating Properties(s)          1.474       0.053       1.667       1.339
+Assembling(s)                   2.565       0.089       2.831       2.272
+Communication(collect)(s)       1.216       0.168       1.698       0.879
+Communication(P2P)(s)           0.288       0.056       0.403       0.138
+1AllReduce(OCPCheck)(s)         0.352       0.048       0.517       0.250
+Newton Step(s)                  0.547       0.056       0.675       0.408
+Newton Step(c)(s)               0.364       0.029       0.418       0.275
+==================================================
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 4 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 5 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 8 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 5 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 4 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 5 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 4 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 3 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated
+In direct memory block for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 1 handles are still allocated
+In indirect memory block 0 for handle type REQUEST, 2 handles are still allocated

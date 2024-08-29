@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --partition=mars
-#SBATCH --nodes=1
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=64    
 #SBATCH --ntasks-per-socket=32
 #SBATCH --cpus-per-task=1
