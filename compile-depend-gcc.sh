@@ -54,7 +54,7 @@ export CXXOPTFLAGS="-O3 -xHost"
 
 ./configure CC=mpicc CXX=mpicxx FC=mpifort --with-fortran-bindings=0 --with-hypre-dir=$DEROOT/hypre-2.28.0/install --with-debugging=0 CFLAGS=$CFLAGS
 make PETSC_DIR=$DEROOT/petsc-3.19.3 PETSC_ARCH=petsc_install all -j
-make all check
+make all check MPIEXEC="srun --partition=mars"
 
 cd $OPENCAE_PROJECT_ROOT
 

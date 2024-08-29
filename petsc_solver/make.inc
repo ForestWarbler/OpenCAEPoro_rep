@@ -3,10 +3,9 @@ PETSC_DIR = /public1/home/sch10084/petsc
 PETSC_ARCH = arch-linux-c-debug
 include $(PETSC_DIR)/lib/petsc/conf/variables
 
-CC=mpiicc
-#CXX=mpicxx
-CXX=mpiicpc
-FC=mpiifort
+CC=mpicc
+CXX=mpicxx
+FC=mpif90
 
 LINKER=$(FC)
 PETSC_INCLUDE = $(CCPPFLAGS) $(PCC_FLAGS) $(CFLAGS)

@@ -63,21 +63,26 @@
 #define PETSC_HAVE_ISINF 1
 #define PETSC_HAVE_ISNAN 1
 #define PETSC_HAVE_ISNORMAL 1
-#define PETSC_HAVE_I_MPI_NUMVERSION 20211000300
 #define PETSC_HAVE_LGAMMA 1
 #define PETSC_HAVE_LOG2 1
 #define PETSC_HAVE_LSEEK 1
 #define PETSC_HAVE_MALLOC_H 1
 #define PETSC_HAVE_MEMMOVE 1
+#define PETSC_HAVE_MKL_INCLUDES 1
+#define PETSC_HAVE_MKL_LIBS 1
+#define PETSC_HAVE_MKL_SPARSE 1
+#define PETSC_HAVE_MKL_SPARSE_OPTIMIZE 1
+#define PETSC_HAVE_MKL_SPARSE_SP2M_FEATURE 1
 #define PETSC_HAVE_MKSTEMP 1
 #define PETSC_HAVE_MMAP 1
-#define PETSC_HAVE_MPICH_NUMVERSION 30400002
+#define PETSC_HAVE_MPICH_NUMVERSION 40102300
 #define PETSC_HAVE_MPIIO 1
 #define PETSC_HAVE_MPI_COMBINER_CONTIGUOUS 1
 #define PETSC_HAVE_MPI_COMBINER_DUP 1
 #define PETSC_HAVE_MPI_COMBINER_NAMED 1
 #define PETSC_HAVE_MPI_F90MODULE 1
 #define PETSC_HAVE_MPI_F90MODULE_VISIBILITY 1
+#define PETSC_HAVE_MPI_FEATURE_DYNAMIC_WINDOW 1
 #define PETSC_HAVE_MPI_GET_ACCUMULATE 1
 #define PETSC_HAVE_MPI_GET_LIBRARY_VERSION 1
 #define PETSC_HAVE_MPI_INIT_THREAD 1
@@ -95,7 +100,7 @@
 #define PETSC_HAVE_NANOSLEEP 1
 #define PETSC_HAVE_NETDB_H 1
 #define PETSC_HAVE_NETINET_IN_H 1
-#define PETSC_HAVE_PACKAGES ":blaslapack:hypre:mathlib:mpi:pthread:regex:x11:"
+#define PETSC_HAVE_PACKAGES ":blaslapack:hypre:mathlib:mkl_sparse:mkl_sparse_optimize:mpi:pthread:regex:x11:"
 #define PETSC_HAVE_POPEN 1
 #define PETSC_HAVE_POSIX_MEMALIGN 1
 #define PETSC_HAVE_PTHREAD 1
@@ -149,7 +154,8 @@
 #define PETSC_LIB_DIR "/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib"
 #define PETSC_MAX_PATH_LEN 4096
 #define PETSC_MEMALIGN 16
-#define PETSC_MPICC_SHOW "icc -I/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -lmpifort -lmpi -ldl -lrt -lpthread"
+#define PETSC_MKL_SPBLAS_DEPRECATED 1
+#define PETSC_MPICC_SHOW "icc -fPIC -diag-disable=10441 -g -I/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include -L/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -Wl,-rpath -Wl,/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -Wl,--enable-new-dtags -lmpi"
 #define PETSC_MPIU_IS_COLORING_VALUE_TYPE MPI_UNSIGNED_SHORT
 #define PETSC_OMAKE "/usr/bin/gmake --no-print-directory"
 #define PETSC_PREFETCH_HINT_NTA _MM_HINT_NTA

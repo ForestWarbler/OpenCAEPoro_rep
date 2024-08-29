@@ -1,1 +1,1 @@
-static const char *petscconfigureoptions = "CC=mpiicc CXX=mpiicpc FC=mpiifort --with-fortran-bindings=0 --with-hypre-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install --with-debugging=0 CFLAGS=-O3 -xHost -fp-model precise -qopenmp -diag-disable=10441";
+static const char *petscconfigureoptions = "CC=mpicc CXX=mpicxx FC=mpifort --with-fortran-bindings=0 --with-hypre-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install --with-debugging=0 CFLAGS=-O3 -xHost";

@@ -7,6 +7,7 @@ module unload mpi
 module unload intel
 module load intel/oneapi2023.2_noimpi
 module load mpi/mpich/4.1.2-icc-oneapi2023.2-ch4-dbg
+module load blas/3.8.0-icc-oneapi2023.2
 #source /data/software/install/oneapi/setvars.sh
 #export PATH=/data/software/install/openmpi/4.1.5/bin:$PATH
 #export CPATH=/data/software/install/openmpi/4.1.5/include:$CPATH

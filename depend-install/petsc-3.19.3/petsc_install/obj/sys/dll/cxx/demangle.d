@@ -7,8 +7,9 @@ petsc_install/obj/sys/dll/cxx/demangle.o: \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmacros.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscversion.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscsystypes.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi_proto.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpio.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmath.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscerror.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscviewertypes.h \
@@ -93,9 +94,11 @@ petsc_install/obj/sys/dll/cxx/demangle.o: \
 
 /usr/include/inttypes.h:
 
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h:
+/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi.h:
 
-/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h:
+/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi_proto.h:
+
+/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpio.h:
 
 /usr/include/stdio.h:
 

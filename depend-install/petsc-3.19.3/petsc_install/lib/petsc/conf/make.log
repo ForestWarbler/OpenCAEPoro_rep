@@ -8,8 +8,8 @@ mailing list archives and consider subscribing.
   https://petsc.org/release/community/mailing/
  
 ==========================================
-Starting make run on ln202 at Fri, 23 Aug 2024 13:20:11 +0800
-Machine characteristics: Linux ln202 5.15.0-78-generic #85-Ubuntu SMP Fri Jul 7 15:25:09 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Starting make run on ln201 at Thu, 29 Aug 2024 15:43:58 +0800
+Machine characteristics: Linux ln201 5.15.0-78-th-ln #49 SMP Wed Jul 3 15:24:14 CST 2024 x86_64 x86_64 x86_64 GNU/Linux
 -----------------------------------------
 Using PETSc directory: /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3
 Using PETSc arch: petsc_install
@@ -22,7 +22,7 @@ PETSC_VERSION_DATE       "Jun 29, 2023"
 PETSC_VERSION_GIT        "v3.19.3"
 PETSC_VERSION_DATE_GIT   "2023-06-29 11:02:23 -0500"
 -----------------------------------------
-Using configure Options: CC=mpiicc CXX=mpiicpc FC=mpiifort --with-fortran-bindings=0 --with-hypre-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install --with-debugging=0 CFLAGS=-O3 -xHost -fp-model precise -qopenmp -diag-disable=10441
+Using configure Options: CC=mpicc CXX=mpicxx FC=mpifort --with-fortran-bindings=0 --with-hypre-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install --with-debugging=0 CFLAGS=-O3 -xHost
 Using configuration flags:
 #define PETSC_ARCH "petsc_install"
 #define PETSC_ATTRIBUTEALIGNED(size) __attribute((aligned(size)))
@@ -86,21 +86,26 @@ Using configuration flags:
 #define PETSC_HAVE_ISINF 1
 #define PETSC_HAVE_ISNAN 1
 #define PETSC_HAVE_ISNORMAL 1
-#define PETSC_HAVE_I_MPI_NUMVERSION 20211000300
 #define PETSC_HAVE_LGAMMA 1
 #define PETSC_HAVE_LOG2 1
 #define PETSC_HAVE_LSEEK 1
 #define PETSC_HAVE_MALLOC_H 1
 #define PETSC_HAVE_MEMMOVE 1
+#define PETSC_HAVE_MKL_INCLUDES 1
+#define PETSC_HAVE_MKL_LIBS 1
+#define PETSC_HAVE_MKL_SPARSE 1
+#define PETSC_HAVE_MKL_SPARSE_OPTIMIZE 1
+#define PETSC_HAVE_MKL_SPARSE_SP2M_FEATURE 1
 #define PETSC_HAVE_MKSTEMP 1
 #define PETSC_HAVE_MMAP 1
-#define PETSC_HAVE_MPICH_NUMVERSION 30400002
+#define PETSC_HAVE_MPICH_NUMVERSION 40102300
 #define PETSC_HAVE_MPIIO 1
 #define PETSC_HAVE_MPI_COMBINER_CONTIGUOUS 1
 #define PETSC_HAVE_MPI_COMBINER_DUP 1
 #define PETSC_HAVE_MPI_COMBINER_NAMED 1
 #define PETSC_HAVE_MPI_F90MODULE 1
 #define PETSC_HAVE_MPI_F90MODULE_VISIBILITY 1
+#define PETSC_HAVE_MPI_FEATURE_DYNAMIC_WINDOW 1
 #define PETSC_HAVE_MPI_GET_ACCUMULATE 1
 #define PETSC_HAVE_MPI_GET_LIBRARY_VERSION 1
 #define PETSC_HAVE_MPI_INIT_THREAD 1
@@ -118,7 +123,7 @@ Using configuration flags:
 #define PETSC_HAVE_NANOSLEEP 1
 #define PETSC_HAVE_NETDB_H 1
 #define PETSC_HAVE_NETINET_IN_H 1
-#define PETSC_HAVE_PACKAGES ":blaslapack:hypre:mathlib:mpi:pthread:regex:x11:"
+#define PETSC_HAVE_PACKAGES ":blaslapack:hypre:mathlib:mkl_sparse:mkl_sparse_optimize:mpi:pthread:regex:x11:"
 #define PETSC_HAVE_POPEN 1
 #define PETSC_HAVE_POSIX_MEMALIGN 1
 #define PETSC_HAVE_PTHREAD 1
@@ -172,7 +177,8 @@ Using configuration flags:
 #define PETSC_LIB_DIR "/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib"
 #define PETSC_MAX_PATH_LEN 4096
 #define PETSC_MEMALIGN 16
-#define PETSC_MPICC_SHOW "icc -I/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -lmpifort -lmpi -ldl -lrt -lpthread"
+#define PETSC_MKL_SPBLAS_DEPRECATED 1
+#define PETSC_MPICC_SHOW "icc -fPIC -diag-disable=10441 -g -I/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include -L/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -Wl,-rpath -Wl,/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -Wl,--enable-new-dtags -lmpi"
 #define PETSC_MPIU_IS_COLORING_VALUE_TYPE MPI_UNSIGNED_SHORT
 #define PETSC_OMAKE "/usr/bin/gmake --no-print-directory"
 #define PETSC_PREFETCH_HINT_NTA _MM_HINT_NTA
@@ -215,35 +221,34 @@ Using configuration flags:
 #define PETSC__DEFAULT_SOURCE 1
 #define PETSC__GNU_SOURCE 1
 -----------------------------------------
-Using C compile: mpiicc -o .o -c -O3 -fPIC  
+Using C compile: mpicc -o .o -c -O3  
 C compiler version: icc (ICC) 2021.10.0 20230609
-Using C++ compile: mpiicpc -o .o -c -wd1572 -g -O3  -std=c++17 -fPIC  -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/include   
-mpicxx -show: icpc -I/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -lmpicxx -lmpifort -lmpi -ldl -lrt -lpthread
+Using C++ compile: mpicxx -o .o -c -wd1572 -g -O3  -std=c++17  -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/include   
+mpicxx -show: icpc -fPIC -diag-disable=10441 -g -I/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include -L/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -lmpicxx -Wl,-rpath -Wl,/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -Wl,--enable-new-dtags -lmpi
 C++ compiler version: icpc (ICC) 2021.10.0 20230609
-Using Fortran compile: mpiifort -o .o -c -fPIC -g -O3    -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/include   
-mpif90 -show: ifort -I/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//include -I/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -Xlinker -rpath -Xlinker /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -lmpifort -lmpi -ldl -lrt -lpthread
+Using Fortran compile: mpifort -o .o -c -g -O3    -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/include -I/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/include   
+mpif90 -show: ifort -fPIC -diag-disable=10441 -g -I/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include -I/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include -L/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -lmpifort -Wl,-rpath -Wl,/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -Wl,--enable-new-dtags -lmpi
 Fortran compiler version: ifort (IFORT) 2021.10.0 20230609
 -----------------------------------------
-Using C/C++ linker: mpiicc
-Using C/C++ flags: -O3 -fPIC
-Using Fortran linker: mpiifort
-Using Fortran flags: -fPIC -g -O3 
+Using C/C++ linker: mpicc
+Using C/C++ flags: -O3
+Using Fortran linker: mpifort
+Using Fortran flags: -g -O3 
 -----------------------------------------
-Using system modules: intel/oneapi2023.2
-icc: remark #10441: The Intel(R) C++ Compiler Classic (ICC) is deprecated and will be removed from product release in the second half of 2023. The Intel(R) oneAPI DPC++/C++ Compiler (ICX) is the recommended compiler moving forward. Please transition to use this compiler. Use '-diag-disable=10441' to disable this message.
-Using mpi.h: # 1 "/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h" 1
+Using system modules: intel/oneapi2023.2_noimpi:mpi/mpich/4.1.2-icc-oneapi2023.2-ch4-dbg:blas/3.8.0-icc-oneapi2023.2
+Using mpi.h: # 1 "/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi.h" 1
 -----------------------------------------
-Using libraries: -Wl,-rpath,/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib -L/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib -Wl,-rpath,/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/lib -L/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/tbb/2021.10.0/lib/intel64/gcc4.8 -L/APP/u22/x86/intel/oneapi2023.2/tbb/2021.10.0/lib/intel64/gcc4.8 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/libfabric/lib -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/libfabric/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib/release -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -L/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/ippcp/2021.8.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/ippcp/2021.8.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/ipp/2021.9.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/ipp/2021.9.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib -L/APP/u22/x86/intel/oneapi2023.2/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/dal/2023.2.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/dal/2023.2.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin -L/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib -L/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/ccl/2021.10.0/lib/cpu_gpu_dpcpp -L/APP/u22/x86/intel/oneapi2023.2/ccl/2021.10.0/lib/cpu_gpu_dpcpp -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11 -lpetsc -lHYPRE -llapack -lblas -lgfortran -lX11 -lifport -lifcoremt_pic -limf -lsvml -lm -lipgo -lirc -lpthread -lgcc_s -lirc_s -ldl -lmpicxx -lmpifort -lmpi -ldl -lrt -lpthread -limf -lsvml -lirng -lstdc++ -lm -lipgo -ldecimal -lcilkrts -lgcc_s -lirc -lirc_s -lquadmath -lmpicxx -lmpifort -lmpi -ldl -lrt -lpthread -limf -lsvml -lirng -lstdc++ -lm -lipgo -ldecimal -lcilkrts -lgcc_s -lirc -lirc_s
+Using libraries: -Wl,-rpath,/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib -L/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/lib -Wl,-rpath,/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/lib -L/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -L/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/lib -Wl,-rpath,/APP/u22/x86/BLAS/icc-2023/lib-icc -L/APP/u22/x86/BLAS/icc-2023/lib-icc -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/tbb/2021.10.0/lib/intel64/gcc4.8 -L/APP/u22/x86/intel/oneapi2023.2/tbb/2021.10.0/lib/intel64/gcc4.8 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/ippcp/2021.8.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/ippcp/2021.8.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/ipp/2021.9.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/ipp/2021.9.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib -L/APP/u22/x86/intel/oneapi2023.2/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/dal/2023.2.0/lib/intel64 -L/APP/u22/x86/intel/oneapi2023.2/dal/2023.2.0/lib/intel64 -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin -L/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/compiler/lib/intel64_lin -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib -L/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib -Wl,-rpath,/APP/u22/x86/intel/oneapi2023.2/ccl/2021.10.0/lib/cpu_gpu_dpcpp -L/APP/u22/x86/intel/oneapi2023.2/ccl/2021.10.0/lib/cpu_gpu_dpcpp -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11 -lpetsc -lHYPRE -lmkl_intel_lp64 -lmkl_core -lmkl_sequential -lpthread -lX11 -lmpifort -lmpi -lifport -lifcoremt_pic -limf -lsvml -lm -lipgo -lirc -lpthread -lgcc_s -lirc_s -ldl -lmpicxx -lmpi -limf -lsvml -lirng -lstdc++ -lm -lipgo -ldecimal -lcilkrts -lgcc_s -lirc -lirc_s -ldl -lquadmath -lmpicxx -lmpi -limf -lsvml -lirng -lstdc++ -lm -lipgo -ldecimal -lcilkrts -lgcc_s -lirc -lirc_s -ldl
 ------------------------------------------
-Using mpiexec: /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/bin/mpiexec
+Using mpiexec: srun --partition=mars
 ------------------------------------------
 Using MAKE: /usr/bin/gmake
-Default MAKEFLAGS: MAKE_NP:42 MAKE_LOAD:104.8 MAKEFLAGS: --no-print-directory -- PETSC_ARCH=petsc_install PETSC_DIR=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3
+Default MAKEFLAGS: MAKE_NP:40 MAKE_LOAD:96.0 MAKEFLAGS: --no-print-directory -- MPIEXEC=srun\ --partition=mars PETSC_ARCH=petsc_install PETSC_DIR=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3
 ==========================================
-/usr/bin/gmake --print-directory -f gmakefile -j42 -l104.8 --output-sync=recurse V= libs
+/usr/bin/gmake --print-directory -f gmakefile -j40 -l96.0 --output-sync=recurse V= libs
 gmake[3]: Nothing to be done for 'libs'.
 =========================================
 Now to check if the libraries are working do:
 make PETSC_DIR=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3 PETSC_ARCH=petsc_install check
 =========================================
-Finishing make run at Fri, 23 Aug 2024 13:20:14 +0800
+Finishing make run at Thu, 29 Aug 2024 15:43:59 +0800

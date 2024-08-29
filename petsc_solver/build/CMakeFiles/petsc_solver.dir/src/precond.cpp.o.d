@@ -57,14 +57,15 @@ CMakeFiles/petsc_solver.dir/src/precond.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi.h \
  /usr/include/c++/11/cstdint \
  /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/icc/stdint.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpicxx.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi_proto.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpio.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpicxx.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/include/PETScSolver.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscksp.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscpc.h \

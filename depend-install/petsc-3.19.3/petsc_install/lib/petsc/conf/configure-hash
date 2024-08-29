@@ -1,18 +1,14 @@
 Uname: Linux x86_64
-PATH=/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//libfabric/bin:/APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0//bin:/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/bin/intel64:/APP/u22/x86/intel/oneapi2023.2/itac/2021.10.0/bin:/APP/u22/x86/intel/oneapi2023.2/inspector/2023.2.0/bin64:/APP/u22/x86/intel/oneapi2023.2/dpcpp-ct/2023.2.0/bin:/APP/u22/x86/intel/oneapi2023.2/dev-utilities/2021.10.0/bin:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/gdb/intel64/bin:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/oclfpga/bin:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin:/APP/u22/x86/intel/oneapi2023.2/advisor/2023.2.0/bin64:/GLOBALFS/sysu_hpcscc_2/.vscode-server/bin/fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/bin/remote-cli:/GLOBALFS/sysu_hpcscc_2/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH=/APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/bin:/APP/u22/x86/mpi/ucx-1.15.0-icc-oneapi2023.2-ch4-dbg/bin:/APP/u22/x86/intel/oneapi2023.2/vtune/2023.2.0/bin64:/APP/u22/x86/intel/oneapi2023.2/mkl/2023.2.0/bin/intel64:/APP/u22/x86/intel/oneapi2023.2/itac/2021.10.0/bin:/APP/u22/x86/intel/oneapi2023.2/inspector/2023.2.0/bin64:/APP/u22/x86/intel/oneapi2023.2/dpcpp-ct/2023.2.0/bin:/APP/u22/x86/intel/oneapi2023.2/dev-utilities/2021.10.0/bin:/APP/u22/x86/intel/oneapi2023.2/debugger/2023.2.0/gdb/intel64/bin:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/lib/oclfpga/bin:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64:/APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin:/APP/u22/x86/intel/oneapi2023.2/advisor/2023.2.0/bin64:/GLOBALFS/sysu_hpcscc_2/.vscode-server/bin/fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/bin/remote-cli:/GLOBALFS/sysu_hpcscc_2/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 args:
     --with-debugging=0
     --with-fortran-bindings=0
     --with-hypre-dir=/GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/hypre-2.28.0/install
-    -diag-disable=10441
-    -fp-model
-    -qopenmp
     -xHost
-    CC=mpiicc
+    CC=mpicc
     CFLAGS=-O3
-    CXX=mpiicpc
-    FC=mpiifort
-    precise
+    CXX=mpicxx
+    FC=mpifort
 00e6e4f7ef6741415e6cd0fd7a4f30a1c98b82316146d05c1b0fbdf249a875f2  config/BuildSystem/config/packages/strumpack.py
 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b  config/PETSc/__init__.py
 023719f8bfff36aca075591165b826b73743996c1a803f02abe28678a2e83dc4  config/PETSc/options/indexTypes.py

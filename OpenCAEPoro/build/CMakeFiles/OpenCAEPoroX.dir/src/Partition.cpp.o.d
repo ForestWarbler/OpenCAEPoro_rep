@@ -195,11 +195,12 @@ CMakeFiles/OpenCAEPoroX.dir/src/Partition.cpp.o: \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/OCPTimeRecord.hpp \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/include/parmetis.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpicxx.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/metis/include/metis.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/parmetis-4.0.3/include/parmetis.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi_proto.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpio.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpicxx.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/parmetis-4.0.3/metis/include/metis.h \
  /usr/include/inttypes.h /usr/include/c++/11/algorithm \
  /usr/include/c++/11/bits/stl_algo.h /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h /usr/include/c++/11/bits/stl_tempbuf.h \

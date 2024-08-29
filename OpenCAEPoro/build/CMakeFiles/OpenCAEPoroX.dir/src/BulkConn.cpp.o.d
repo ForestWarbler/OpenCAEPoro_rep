@@ -250,11 +250,12 @@ CMakeFiles/OpenCAEPoroX.dir/src/BulkConn.cpp.o: \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/OCPTimeRecord.hpp \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/include/parmetis.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpi.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpio.h \
- /APP/u22/x86/intel/oneapi2023.2/mpi/2021.10.0/include/mpicxx.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/parmetis-4.0.3/metis/include/metis.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/parmetis-4.0.3/include/parmetis.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpi_proto.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpio.h \
+ /APP/u22/x86/mpi/mpich-4.1.2-icc-oneapi2023.2-ch4-dbg/include/mpicxx.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/parmetis-4.0.3/metis/include/metis.h \
  /usr/include/inttypes.h /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/map \
@@ -266,17 +267,17 @@ CMakeFiles/OpenCAEPoroX.dir/src/BulkConn.cpp.o: \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/LinearSolver.hpp \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/include/PETScBSolverPS.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/petsc_solver/include/PETScSolver.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscksp.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscpc.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmat.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscvec.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscsys.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscksp.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscpc.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscmat.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscvec.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscsys.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/include/petscconf.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/include/petscconf_poison.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/petsc_install/include/petscfix.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmacros.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscversion.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscsystypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscmacros.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscversion.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscsystypes.h \
  /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h /usr/include/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -286,24 +287,24 @@ CMakeFiles/OpenCAEPoroX.dir/src/BulkConn.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /APP/u22/x86/intel/oneapi2023.2/compiler/2023.2.0/linux/bin/intel64/../../compiler/include/complex \
  /usr/include/c++/11/complex \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petsccxxcomplexfix.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmath.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscerror.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscviewertypes.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscoptions.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petsclog.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petsctime.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscstring.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscsftypes.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscis.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscsectiontypes.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscistypes.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscdevicetypes.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscviewer.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscdrawtypes.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscmatcoarsen.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscdmtypes.h \
- /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/depend-install/petsc-3.19.3/include/petscpctypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petsccxxcomplexfix.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscmath.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscerror.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscviewertypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscoptions.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petsclog.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petsctime.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscstring.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscsftypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscis.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscsectiontypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscistypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscdevicetypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscviewer.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscdrawtypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscmatcoarsen.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscdmtypes.h \
+ /GLOBALFS/sysu_hpcscc_2/zrh/OpenCAEPoro_ASC2024_OMPI_icc/petsc-3.19.3/include/petscpctypes.h \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/PVTModule.hpp \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/MixtureUnit.hpp \
  /GLOBALFS/sysu_hpcscc_2/zhj/OpenCAEPoro_rep/OpenCAEPoro/include/OCPMixture.hpp \
